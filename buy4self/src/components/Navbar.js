@@ -1,15 +1,23 @@
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import {
+  faBasketShopping,
+  faMagnifyingGlass,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Navbar = () => {
+
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold" href="/">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary text-light">
+        <div className="container-fluid">
+          <a className="navbar-brand fw-bold" href="/">
             Buy4Self
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -17,71 +25,60 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="/products">
-                  Products
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/offers">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/offers">
                   Offers
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/contact">
                   Contact
                 </a>
               </li>
             </ul>
-            <form class="d-flex mx-auto col-5 mx-auto">
+            <form className="d-flex mx-auto col-5 mx-auto">
               <input
-                class="form-control me-2"
+                className="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-light" type="submit">
-                Search
+              <button className="btn btn-outline-light col-3" type="submit">
+                <FontAwesomeIcon icon={faMagnifyingGlass} /> Search
               </button>
             </form>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="/"
+                  className="nav-link text-white dropdown-toggle"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  aria-expanded="true"
+                  onClick={null}
                 >
-                  Cart
+                  <FontAwesomeIcon icon={faBasketShopping} /> Cart
                 </a>
-                <ul class="dropdown-menu dropdown-menu-start mx-auto">
-                  <li>
-                    {" "}
-                    <li class="dropdown-item">Product 1 100 TL</li>
-                  </li>
-                  <li>
-                    <li class="dropdown-item">Product 2 100 TL</li>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
+                <ul className="dropdown-menu dropdown-menu-start mx-auto">
+                  {" "}
+                  <li className="dropdown-item">Product 1 100 TL</li>
+                  <li className="dropdown-item">Product 2 100 TL</li>
+                  <hr className="dropdown-divider" />
                   <li className="p-2">
-                    <div class="btn btn-success col-12">Go To Cart</div>
+                    <div className="btn btn-success col-12">Go To Cart</div>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/login">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/login">
                   Login
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/register">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/register">
                   Register
                 </a>
               </li>
