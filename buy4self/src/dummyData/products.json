@@ -1,0 +1,117 @@
+ [
+        {
+            "id": 1,
+            "name": "Electronix X1",
+            "img": "https://placehold.co/600x400/EEE/31343C",
+            "price": 29.99,
+            "stock": 15,
+            "category": {
+                "id": 1,
+                "name": "Electronics"
+            },
+            "reviews": [
+                {
+                    "id": 101,
+                    "rating": 4.5,
+                    "comment": "Great product, highly recommended."
+                },
+                {
+                    "id": 102,
+                    "rating": 5.0,
+                    "comment": "Very satisfied, thank you!"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Fashionista A2",
+            "img": "https://placehold.co/600x400/EEE/31343C",
+            "price": 49.99,
+            "stock": 20,
+            "category": {
+                "id": 2,
+                "name": "Clothing"
+            },
+            "reviews": [
+                {
+                    "id": 201,
+                    "rating": 4.0,
+                    "comment": "Good product for the price."
+                },
+                {
+                    "id": 202,
+                    "rating": 3.5,
+                    "comment": "Average product, better options available."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Home Essentials H3",
+            "img": "https://placehold.co/600x400/EEE/31343C",
+            "price": 39.99,
+            "stock": 12,
+            "category": {
+                "id": 3,
+                "name": "Home & Garden"
+            },
+            "reviews": [
+                {
+                    "id": 301,
+                    "rating": 4.2,
+                    "comment": "Perfect for my needs."
+                },
+                {
+                    "id": 302,
+                    "rating": 4.8,
+                    "comment": "Excellent quality."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Fitness Pro F4",
+            "img": "https://placehold.co/600x400/EEE/31343C",
+            "price": 69.99,
+            "stock": 8,
+            "category": {
+                "id": 4,
+                "name": "Sports & Fitness"
+            },
+            "reviews": [
+                {
+                    "id": 401,
+                    "rating": 4.7,
+                    "comment": "Great for workouts."
+                },
+                {
+                    "id": 402,
+                    "rating": 4.4,
+                    "comment": "Good value for the price."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Kitchen Master K5",
+            "img": "https://placehold.co/600x400/EEE/31343C",
+            "price": 54.99,
+            "stock": 10,
+            "category": {
+                "id": 5,
+                "name": "Kitchen Appliances"
+            },
+            "reviews": [
+                {
+                    "id": 501,
+                    "rating": 4.9,
+                    "comment": "Makes cooking a breeze!"
+                },
+                {
+                    "id": 502,
+                    "rating": 4.6,
+                    "comment": "Highly recommended for the kitchen."
+                }
+            ]
+        }
+    ]

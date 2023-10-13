@@ -8,6 +8,9 @@ $gray-color:#dcdde1;
 $success-color: #16a085;
 $danger-color: #e74c3c;
 
+.text-third{
+  color: $third-color !important;
+}
 .text-bg-light{
     background-color: $gray-color !important;
     color:black !important;

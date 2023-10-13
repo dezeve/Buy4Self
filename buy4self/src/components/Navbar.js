@@ -1,13 +1,13 @@
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import {
   faBasketShopping,
   faMagnifyingGlass,
-  faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useMemo } from "react";
+import CartDropdown from "./CartDropdown";
 
 const Navbar = () => {
+
 
   return (
     <div>
@@ -52,26 +52,7 @@ const Navbar = () => {
               </button>
             </form>
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link text-white dropdown-toggle"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="true"
-                  onClick={null}
-                >
-                  <FontAwesomeIcon icon={faBasketShopping} /> Cart
-                </a>
-                <ul className="dropdown-menu dropdown-menu-start mx-auto">
-                  {" "}
-                  <li className="dropdown-item">Product 1 100 TL</li>
-                  <li className="dropdown-item">Product 2 100 TL</li>
-                  <hr className="dropdown-divider" />
-                  <li className="p-2">
-                    <div className="btn btn-success col-12">Go To Cart</div>
-                  </li>
-                </ul>
-              </li>
+              <CartDropdown />
               <li className="nav-item">
                 <a className="nav-link text-white" href="/login">
                   Login

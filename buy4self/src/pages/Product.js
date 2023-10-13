@@ -8,8 +8,8 @@ const Product = () => {
     <Layout>
       <div className="col-5">
         <img
-          src="https://placehold.co/600x400/EEE/31343C"
-          className="card-img-top"
+          src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-essiz-coworking-ofis-is-birligi-verimlilik.webp"
+          className="card-img-top rounded shadow-lg"
           alt="..."
         />
       </div>
@@ -21,7 +21,7 @@ const Product = () => {
             {
               //FOR reviews icons etc
             }
-            <div className="price outline-dark">128 TL</div>
+            <div className="price text-third fw-bold">128 TL</div>
             <p className="card-text mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               venenatis cursus quam eu blandit. Aliquam porttitor rhoncus enim
@@ -65,7 +65,6 @@ const Product = () => {
               <p className="card-text"> Review test</p>
             </div>
           </div>
-          
         </div>
         {/* 
 FOR REVIEWS
