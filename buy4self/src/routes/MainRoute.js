@@ -5,6 +5,7 @@ import Offers from "../pages/Offers";
 import Product from "../pages/Product";
 import Products from "../pages/Products";
 import Register from "../pages/Register";
+import ForgotPassword from "../pages/ForgotPassword";
 
 const routes = [
   {
@@ -35,6 +36,10 @@ const routes = [
   {
     path: "/register",
     component: <Register />,
+  },
+  {
+    path: "/forgot-password",
+    component: <ForgotPassword/>
   },
 ];
 export default routes;

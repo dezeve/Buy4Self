@@ -7,8 +7,8 @@ import productsData from "../dummyData/products.json";
 const Products = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
-    const activeCategoryId = searchParams.get("category");
-    
+  const activeCategoryId = searchParams.get("category");
+
   return (
     <Layout>
       <div className="col-md-4 col-xl-3 col-xs-12 ">
@@ -16,8 +16,12 @@ const Products = () => {
         <Sidebar active={activeCategoryId} />
       </div>
       <div className="col-md-8 col-xl-9 col-xs-12 ">
-       
-          <div className="row">
+        <div className="col-12 text-center">
+          <label className="fs-4">
+            The products that has  {activeCategoryId} category ID is listing.
+          </label>
+        </div>
+        <div className="row">
           {" "}
           {productsData.map((product) => (
             <div className="col-md-3">
@@ -25,7 +29,6 @@ const Products = () => {
               <ProductCard data={product} />
             </div>
           ))}
-       
         </div>
       </div>
     </Layout>

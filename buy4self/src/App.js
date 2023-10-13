@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { CartProvider } from "./context/CartDropdownContext";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -12,15 +13,17 @@ import routes from "./routes/MainRoute";
 function App() {
   return (
     <div>
-      <Header />
-      <BrowserRouter>
-        <Routes>
-          {routes.map((route) => (
-            <Route path={route.path} element={route.component} />
-          ))}
-        </Routes>
-      </BrowserRouter>
-      <Footer />
+      <CartProvider>
+        <Header />
+        <BrowserRouter>
+          <Routes>
+            {routes.map((route) => (
+              <Route path={route.path} element={route.component} />
+            ))}
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </CartProvider>
     </div>
   );
 }

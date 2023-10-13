@@ -1,15 +1,14 @@
 import { faCartPlus, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useCart } from "../context/CartDropdownContext";
 
 const ProductCard = (props) => {
   const { data: product } = props;
-  
-  const addToCartHandler = (productId) => {
+  const { toggleCart } = useCart();
 
-;
-    //We will show dropdown, we can control it via their classname like as "show". When we click add to cart button,
-    //it has to change their classname as "show" but when we click add to cart button again, their classnames shouldnt contain "show"
+  const addToCartHandler = (productId) => {
+    toggleCart();
   };
   return (
     <div className="card mt-3">

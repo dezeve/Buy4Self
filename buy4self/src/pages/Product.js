@@ -1,9 +1,15 @@
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useCart } from "../context/CartDropdownContext";
 import Layout from "../layout/Layout";
 
 const Product = () => {
+    const { toggleCart } = useCart();
+
+    const addToCartHandler = (productId) => {
+      toggleCart();
+    };
   return (
     <Layout>
       <div className="col-5">
@@ -40,7 +46,7 @@ const Product = () => {
             </p>
             <center>
               {" "}
-              <div className="btn btn-success col-6 mt-3">
+              <div className="btn btn-success col-6 mt-3"  onClick={() => addToCartHandler()}>
                 <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
               </div>
             </center>
