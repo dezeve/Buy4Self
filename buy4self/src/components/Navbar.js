@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary text-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary text-light fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand fw-bold" href="/">
             Buy4Self
