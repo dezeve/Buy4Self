@@ -4,7 +4,7 @@ import Layout from "../layout/Layout";
 const Register = () => {
   return (
     <Layout>
-      <div className=" d-flex justify-content-center align-items-center mt-5 mb-5">
+      <div className=" d-flex justify-content-center align-items-center mb-5">
         <div class=" col-md-10 col-lg-10 col-xl-10">
           {" "}
           <div className="card">
