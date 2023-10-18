@@ -10,7 +10,7 @@ const Register = () => {
           <div className="card">
             <div className="card-body row">
               {" "}
-              <div className="col-6">
+              <div className="col-6 d-flex justify-content-center">
                 <img
                   src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-toplanti-odasi-is-birligi-yenilik-basari.webp"
                   className="img-fluid rounded"
