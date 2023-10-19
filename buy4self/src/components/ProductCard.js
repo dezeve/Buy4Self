@@ -1,4 +1,4 @@
-import { faCartPlus, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faCartPlus, faShoppingCart, faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useCart } from "../context/CartDropdownContext";
@@ -35,6 +35,14 @@ const ProductCard = (props) => {
         <div className="productPrice mb-3 text-center text-third  fw-bold">
           {" "}
           {product.price} TL
+        </div>
+
+        <div class="form-outline d-flex mb-2">
+          <button type="button" class="btn btn-danger"><FontAwesomeIcon icon={faMinus} /></button>
+          &nbsp;
+          <input type="number" class="form-control" disabled/>
+          &nbsp;
+          <button type="button" class="btn btn-primary"><FontAwesomeIcon icon={faPlus} /></button>
         </div>
 
         <div

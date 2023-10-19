@@ -6,6 +6,8 @@ import Product from "../pages/Product";
 import Products from "../pages/Products";
 import Register from "../pages/Register";
 import ForgotPassword from "../pages/ForgotPassword";
+import Payment from "../pages/Payment";
+import Cart from "../pages/Cart";
 
 const routes = [
   {
@@ -40,6 +42,14 @@ const routes = [
   {
     path: "/forgot-password",
     component: <ForgotPassword/>
+  },
+  {
+    path: "/Payment",
+    component: <Payment />
+  },
+  {
+    path: "/Cart",
+    component: <Cart />
   },
 ];
 export default routes;
