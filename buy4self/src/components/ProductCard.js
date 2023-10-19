@@ -5,7 +5,7 @@ import { useCart } from "../context/CartDropdownContext";
 
 const ProductCard = (props) => {
   const { data: product } = props;
-  const { toggleCart } = useCart();
+  const { toggleCart,showCart } = useCart();
 
   const addToCartHandler = (productId) => {
     toggleCart();

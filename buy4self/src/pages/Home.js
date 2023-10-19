@@ -14,7 +14,7 @@ const Home = () => {
         <div className="row">
           {" "}
           {productsData.map((product) => (
-            <div className="col-md-3">
+            <div className="col-md-3 col-md-6 col-sm-4 col-lg-3">
               {" "}
               <ProductCard data={product} />
             </div>

@@ -6,9 +6,11 @@ import { useCart } from "../context/CartDropdownContext";
 const CartDropdown = () => {
   const { isCartOpen, toggleCart } = useCart();
   return (
-    <li className="nav-item dropdown">
+    <div>
       <a
-        className="nav-link text-white dropdown-toggle"
+        className={`nav-link text-white dropdown-toggle ${
+          isCartOpen ? "show" : ""
+        } `}
         role="button"
         data-bs-toggle="dropdown"
         aria-expanded="true"
@@ -16,18 +18,26 @@ const CartDropdown = () => {
       >
         <FontAwesomeIcon icon={faBasketShopping} /> Cart
       </a>
-      <ul
-        className={`dropdown-menu dropdown-menu-start mx-auto
-             ${isCartOpen ? "show" : ""} `}
+      <div
+        className={`dropdown-menu dropdown-menu-end mx-auto cartDropdownInNavbar p-2
+                     ${isCartOpen ? "show" : ""}
+                      `}
+        data-bs-popper="static"
       >
-        <li className="dropdown-item">Product 1 100 TL</li>
-        <li className="dropdown-item">Product 2 100 TL</li>
+        <center>
+          <label className="fw-bold">Cart Details</label>
+        </center>
+        <a className="dropdown-item">Product 1 100 TL</a>
+        <a className="dropdown-item">Product 2 100 TL</a>
         <hr className="dropdown-divider" />
-        <li className="p-2">
-          <div className="btn btn-success col-12"><a href="/Cart" className="text-white text-decoration-none">Go To Cart</a></div>
-        </li>
-      </ul>
-    </li>
+
+        <div className="btn btn-success col-12 fit-contain">
+          <a href="/Cart" className="text-white text-decoration-none">
+            Go To Cart
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };
 

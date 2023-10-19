@@ -7,8 +7,6 @@ import React, { useEffect, useMemo } from "react";
 import CartDropdown from "./CartDropdown";
 
 const Navbar = () => {
-
-
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary text-light fixed-top">
@@ -16,6 +14,9 @@ const Navbar = () => {
           <a className="navbar-brand fw-bold" href="/">
             Buy4Self
           </a>
+          <div className="d-block d-lg-none">
+            <CartDropdown />
+          </div>
           <button
             className="navbar-toggler"
             type="button"
@@ -40,19 +41,23 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <form className="d-flex mx-auto col-5 mx-auto">
+            <form className="d-flex mx-auto col-lg-6 col-xs-9 col-sm-9 mx-auto">
               <input
                 className="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-light col-3" type="submit">
+              <button className="btn btn-outline-light col-4" type="submit">
                 <FontAwesomeIcon icon={faMagnifyingGlass} /> Search
               </button>
             </form>
             <ul className="navbar-nav ml-auto">
-              <CartDropdown />
+              <li className="d-none d-lg-block">
+                <div className="nav-item dropdown ">
+                  <CartDropdown />{" "}
+                </div>
+              </li>
               <li className="nav-item">
                 <a className="nav-link text-white" href="/login">
                   Login

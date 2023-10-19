@@ -8,9 +8,12 @@ export function CartProvider({ children }) {
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);    
   };
+  const showCart = () => {
+    setIsCartOpen(true);
+  };
 
   return (
-    <CartDropdownContext.Provider value={{ isCartOpen, toggleCart }}>
+    <CartDropdownContext.Provider value={{ isCartOpen, toggleCart, showCart }}>
       {children}
     </CartDropdownContext.Provider>
   );
