@@ -31,8 +31,11 @@ const CartDropdown = () => {
         <a className="dropdown-item">Product 2 100 TL</a>
         <hr className="dropdown-divider" />
 
-        <div className="btn btn-success col-12 fit-contain">
-          <a href="/Cart" className="text-white text-decoration-none">
+        <div className="">
+          <a
+            href="/cart"
+            className="text-white text-decoration-none btn btn-success col-12 fit-contain"
+          >
             Go To Cart
           </a>
         </div>

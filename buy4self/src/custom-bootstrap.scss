@@ -11,6 +11,9 @@ $danger-color: #e74c3c;
 .text-third{
   color: $third-color !important;
 }
+.text-teal{
+  color: $teal-color !important;
+}
 .text-bg-light{
     background-color: $gray-color !important;
     color:black !important;
@@ -79,7 +82,9 @@ $danger-color: #e74c3c;
 
 .activeCategory{
    color:$teal-color !important;
+  font-style: italic;
    font-weight:600 !important;
+    padding-left:3px !important;
 }
 
 .cartDropdownInNavbar {

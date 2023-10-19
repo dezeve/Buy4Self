@@ -1,15 +1,27 @@
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMinus,
+  faPlus,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "../context/CartDropdownContext";
 import Layout from "../layout/Layout";
 
 const Product = () => {
-    const { toggleCart } = useCart();
+  const [quantity, setQuantity] = useState(1);
+  const { toggleCart } = useCart();
 
-    const addToCartHandler = (productId) => {
-      toggleCart();
-    };
+  const addToCartHandler = (productId) => {
+    toggleCart();
+  };
+
+  const increaseQuantity = () => {
+   quantity<5 && setQuantity(quantity+1)
+  }
+  const decreaseQuantity = () => {
+   quantity>1 && setQuantity(quantity-1)
+  }
   return (
     <Layout>
       <div className="col-5">
@@ -46,8 +58,34 @@ const Product = () => {
             </p>
             <center>
               {" "}
-              <div className="btn btn-success col-6 mt-3"  onClick={() => addToCartHandler()}>
-                <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
+              <div className="row justify-content-center">
+                <div class="col-2 mt-3">
+                  <div className="d-flex">
+                    <div class="btn p-2" onClick={decreaseQuantity}>
+                      <FontAwesomeIcon icon={faMinus} />
+                    </div>
+                    <div className="">
+                      <input
+                        type="number"
+                        class="form-control"
+                        style={{ width: "60px" }}
+                        value={quantity}
+                        onChange={(e)=>setQuantity(e.target.value)}
+                        min={0}
+                        max={5}
+                      />
+                    </div>
+                    <div class="btn p-2 " onClick={increaseQuantity}>
+                      <FontAwesomeIcon icon={faPlus} />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="btn btn-success col-6 mt-3"
+                  onClick={() => addToCartHandler()}
+                >
+                  <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
+                </div>
               </div>
             </center>
           </div>

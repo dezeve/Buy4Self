@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <Layout>
       {" "}
-      <div class=" d-flex justify-content-center align-items-center">
+      <div class=" d-flex justify-content-center align-items-center mt-5">
         {" "}
         <div class=" col-md-10 col-lg-10 col-xl-10">
           <div class="card shadow-2-strong">
