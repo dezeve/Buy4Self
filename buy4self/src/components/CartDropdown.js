@@ -24,7 +24,7 @@ const CartDropdown = () => {
         <li className="dropdown-item">Product 2 100 TL</li>
         <hr className="dropdown-divider" />
         <li className="p-2">
-          <div className="btn btn-success col-12">Go To Cart</div>
+          <div className="btn btn-success col-12"><a href="/Cart" className="text-white text-decoration-none">Go To Cart</a></div>
         </li>
       </ul>
     </li>
