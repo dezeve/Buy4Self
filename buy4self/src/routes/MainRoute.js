@@ -8,6 +8,7 @@ import Register from "../pages/Register";
 import ForgotPassword from "../pages/ForgotPassword";
 import Payment from "../pages/Payment";
 import Cart from "../pages/Cart";
+import UserProfile from "../pages/UserProfile";
 
 const routes = [
   {
@@ -50,6 +51,10 @@ const routes = [
   {
     path: "/Cart",
     component: <Cart />
+  },
+  {
+    path: "/UserProfile",
+    component: <UserProfile />
   },
 ];
 export default routes;
