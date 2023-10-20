@@ -24,7 +24,7 @@ const Contact = () => {
                                 <label class="mb-2">Message</label>
                                 <textarea class="form-control" rows="10"></textarea>
                             </div>
-                        <div className='d-grid gap-2'>
+                        <div className='d-grid'>
                             <button type="submit" class="btn btn-primary mb-2 mt-4">Submit</button>
                         </div>
                     </form>
