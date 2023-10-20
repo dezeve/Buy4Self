@@ -91,15 +91,15 @@ const Cart = () => {
         </div>
 
         <div className="mt-5 justify-content-center d-flex">
-          <button type="button" class="btn btn-primary">
-            <a href="/Payment" className="text-decoration-none text-white">
-              Proceed To Payment
+        <button type="button" class="btn btn-success">
+            <a href="/" className="text-decoration-none text-white">
+              Continue Shopping
             </a>
           </button>
           &nbsp;
-          <button type="button" class="btn btn-success">
-            <a href="/" className="text-decoration-none text-white">
-              Continue Shopping
+          <button type="button" class="btn btn-primary">
+            <a href="/Payment" className="text-decoration-none text-white">
+              Proceed To Payment
             </a>
           </button>
         </div>
