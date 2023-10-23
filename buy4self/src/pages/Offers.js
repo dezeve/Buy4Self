@@ -18,6 +18,35 @@ const Offers = () => {
             </div>
         </div>
 
+        <div className='d-flex justify-content-center align-items-center mb-5 card shadow-2-strong'>
+            <div className='row d-flex justify-content-center align-items-center' style={{backgroundColor:"#b3b3b3"}}>
+                <div class="card col-sm bg-primary bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1583573636246-18cb2246697f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1938" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm bg-primary bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1583573636246-18cb2246697f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1938" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm bg-primary bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1583573636246-18cb2246697f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1938" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="mt-4 p-5 bg-dark bg-gradient text-white rounded">
             
             <div class="row">
@@ -27,6 +56,35 @@ const Offers = () => {
                 </div>
                 <div class="col-sm">
                 <img className='rounded img-fluid' src="https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2023" alt="sale" width="700" height="300" />
+                </div>
+            </div>
+        </div>
+
+        <div className='d-flex justify-content-center align-items-center mb-5 card shadow-2-strong'>
+            <div className='row d-flex justify-content-center align-items-center' style={{backgroundColor:"#b3b3b3"}}>
+                <div class="card col-sm  bg-dark  bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2023" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm bg-dark  bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2023" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm  bg-dark  bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1506617420156-8e4536971650?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2023" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,6 +101,35 @@ const Offers = () => {
             </div>
         </div>
 
+        <div className='d-flex justify-content-center align-items-center mb-5 card shadow-2-strong'>
+            <div className='row d-flex justify-content-center align-items-center' style={{backgroundColor:"#b3b3b3"}}>
+                <div class="card col-sm bg-danger bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm bg-danger bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm bg-danger bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="mt-4 p-5 bg-secondary bg-gradient text-white rounded">
             <div class="row">
                 <div class="col-sm">
@@ -51,6 +138,35 @@ const Offers = () => {
                 </div>
                 <div class="col-sm">
                     <img className='rounded img-fluid' src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1932" alt="sale" width="700" height="300" />
+                </div>
+            </div>
+        </div>
+
+        <div className='d-flex justify-content-center align-items-center mb-5 card shadow-2-strong'>
+            <div className='row d-flex justify-content-center align-items-center' style={{backgroundColor:"#b3b3b3"}}>
+                <div class="card col-sm bg-secondary bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1932" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm bg-secondary bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1932" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
+                </div>
+                <div class="card col-sm bg-secondary bg-gradient text-white p-3 m-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1632829882891-5047ccc421bc?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1932" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
+                        <a href="#" class="btn btn-light">Submit</a>
+                    </div>
                 </div>
             </div>
         </div>
