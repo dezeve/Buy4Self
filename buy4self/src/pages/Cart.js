@@ -2,6 +2,7 @@ import { faMinus, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import Layout from "../layout/Layout";
+import "../css/Buttons.css";
 
 const Cart = () => {
       const [quantity, setQuantity] = useState(1);
@@ -91,14 +92,14 @@ const Cart = () => {
         </div>
 
         <div className="mt-5 justify-content-center d-flex">
-        <button type="button" class="btn btn-success">
-            <a href="/" className="text-decoration-none text-white">
+        <button type="button" class="cartButton">
+            <a href="/" style={{textDecoration:"none", color:"white"}}>
               Continue Shopping
             </a>
           </button>
           &nbsp;
-          <button type="button" class="btn btn-primary">
-            <a href="/Payment" className="text-decoration-none text-white">
+          <button type="button" class="cartButton">
+            <a href="/Payment" style={{textDecoration:"none", color:"white"}}>
               Proceed To Payment
             </a>
           </button>
