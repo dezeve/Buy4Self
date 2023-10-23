@@ -17,7 +17,9 @@ const UserProfile = () => {
                 <div className="row mb-5">
                     <p className="col" style={{fontSize:"50px"}}><b>Profile</b></p>
                     <button className="userProfileButton col-md-2 ml-auto h-50">
-                        Continue shopping &nbsp; <FontAwesomeIcon icon={faTag} />
+                        <a href="/">
+                            Continue shopping &nbsp; <FontAwesomeIcon icon={faTag} />
+                        </a>
                     </button>
                 </div>
 
@@ -35,16 +37,22 @@ const UserProfile = () => {
                                 <FontAwesomeIcon icon={faUser} /> <br /> Account settings
                             </button>
                             <button className="userProfileButton nav-item">
-                                <FontAwesomeIcon icon={faFile} /> <br /> Order history
+                                <a class="nav-link" href="#orderHistory">
+                                    <FontAwesomeIcon icon={faFile} /> <br /> Order history
+                                </a>
                             </button>
                             <button className="userProfileButton nav-item">
-                                <FontAwesomeIcon icon={faSquareEnvelope} /> <br /> Contact us
+                                <a href="/Contact">
+                                    <FontAwesomeIcon icon={faSquareEnvelope} /> <br /> Contact us
+                                </a>
                             </button>
                             <button className="userProfileButton nav-item">
                                 <FontAwesomeIcon icon={faMagnifyingGlass} /> <br /> Your reviews
                             </button>
                             <button className="userProfileButton nav-item">
-                                <FontAwesomeIcon icon={faCartShopping} /> <br /> Go to your cart
+                                <a href="/Cart">
+                                    <FontAwesomeIcon icon={faCartShopping} /> <br /> Go to your cart
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -56,7 +64,7 @@ const UserProfile = () => {
 
                 <br />
 
-                <div className="p-5 rounded w-75 m-auto border border-dark" style={{backgroundColor:"#b6cad9"}}>
+                <div id="orderHistory" className="p-5 rounded w-75 m-auto border border-dark" style={{backgroundColor:"#b6cad9"}}>
                     <p style={{fontSize:"35px"}} className="mb-3"><b>Order History</b></p>
 
 
