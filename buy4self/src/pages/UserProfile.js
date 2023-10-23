@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../layout/Layout";
+import "../css/Button.css";
 
 const UserProfile = () => {
     return (
@@ -13,11 +14,20 @@ const UserProfile = () => {
                 </div>
                 <div class="mt-5 nav d-flex flex-column nav-pills justify-content-center align-items-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <div className="d-grid gap-2 w-50">
-                        <button className="btn btn-primary nav-item">
+                        <button className="userProfileButton nav-item">
                             Account settings
                         </button>
-                        <button className="btn btn-primary nav-item">
+                        <button className="userProfileButton nav-item">
                             Order history
+                        </button>
+                        <button className="userProfileButton nav-item">
+                            Contact us
+                        </button>
+                        <button className="userProfileButton nav-item">
+                            Your reviews
+                        </button>
+                        <button className="userProfileButton nav-item">
+                            Go to your cart
                         </button>
                     </div>
                 </div>
