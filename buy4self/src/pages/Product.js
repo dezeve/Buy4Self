@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { useCart } from "../context/CartDropdownContext";
 import Layout from "../layout/Layout";
+import StarRating from "../components/StarRating";
 
 const Product = () => {
   const [quantity, setQuantity] = useState(1);
@@ -38,8 +39,10 @@ const Product = () => {
             <h3 className="card-title"> Product </h3>
             {
               //FOR reviews icons etc
+
+              <StarRating />
             }
-            <div className="price text-third fw-bold">128 TL</div>
+            <div className="price text-third fw-bold mt-3">128 TL</div>
             <p className="card-text mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               venenatis cursus quam eu blandit. Aliquam porttitor rhoncus enim
@@ -94,9 +97,11 @@ const Product = () => {
 
       <div className="col-12 mt-5">
         <div className="card p-3">
-          <div className="card">
-            <div className="card-body">
-              <div className="card-title">Mustafa KAÇAR</div>
+        <div className="card">
+            <div className="card-body row">
+              <div className="card-title col-auto mr-auto">Mustafa KAÇAR</div>
+              <div className="col-auto mr-auto"><StarRating /></div>
+              <div className="col text-end">10 October, 2023</div>
               <p className="card-text"> Review test</p>
             </div>
           </div>
@@ -104,15 +109,18 @@ const Product = () => {
           <hr />
 
           <div className="card">
-            <div className="card-body">
-              <div className="card-title">Mustafa KAÇAR</div>
+            <div className="card-body row">
+              <div className="card-title col-auto mr-auto">Mustafa KAÇAR</div>
+              <div className="col-auto mr-auto"><StarRating /></div>
+              <div className="col text-end">10 October, 2023</div>
               <p className="card-text"> Review test</p>
             </div>
           </div>
         </div>
         {/* 
-FOR REVIEWS
-*/}
+          FOR REVIEWS
+          */
+        }
       </div>
     </Layout>
   );
