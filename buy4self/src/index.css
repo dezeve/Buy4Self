@@ -16,3 +16,16 @@ a {
   color:inherit !important;
   text-decoration: none !important;
 }
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #dcef2f;
+}
+.off {
+  color: #ccc;
+}
