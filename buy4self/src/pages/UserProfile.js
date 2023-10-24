@@ -7,6 +7,8 @@ import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { faTag } from "@fortawesome/free-solid-svg-icons";
+import { faKey } from "@fortawesome/free-solid-svg-icons";
+import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const UserProfile = () => {
@@ -33,9 +35,47 @@ const UserProfile = () => {
                 <div class="p-3 rounded w-75 m-auto border border-dark" style={{backgroundColor:"#999999"}}>
                     <div class="mt-5 mb-5 nav d-flex flex-column nav-pills justify-content-center align-items-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <div className="d-grid gap-2 w-75">
-                            <button className="userProfileButton nav-item">
+                            <button className="userProfileButton nav-item" data-bs-toggle="modal" data-bs-target="#userModal">
                                 <FontAwesomeIcon icon={faUser} /> <br /> Account settings
                             </button>
+
+                            <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5">Edit your profile</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body mt-3 mb-3">
+                                        <p className="h5"><b> <FontAwesomeIcon icon={faUser} />&nbsp;Change your username</b></p>
+                                        <input class="form-control" type="text" placeholder="Enter your username here" />
+
+                                        <br /> <br />
+
+                                        <p className="h5"><FontAwesomeIcon icon={faKey} />&nbsp;<b>Change your password</b></p>
+                                        <input class="form-control mb-2" type="password" placeholder="Enter your password here" />
+                                        <input class="form-control" type="password" placeholder="Re-enter your password" />
+
+                                        <br /> <br />
+
+                                        <p className="h5"><FontAwesomeIcon icon={faImage} />&nbsp;<b>Change your profile picture</b></p>
+                                        <div className="d-flex justify-content-center mt-4">
+                                            <div className="userProfileButton">
+                                                <label role="button" class="form-label m-1" for="userProfilePicture">Choose picture</label>
+                                                <input type="file" class="form-control d-none" id="userProfilePicture" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <button className="userProfileButton nav-item">
                                 <a class="nav-link" href="#orderHistory">
                                     <FontAwesomeIcon icon={faFile} /> <br /> Order history
