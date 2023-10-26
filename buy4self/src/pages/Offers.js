@@ -25,7 +25,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 1</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm bg-primary bg-gradient text-white p-3 m-2 w-100">
@@ -33,7 +33,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 2</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm bg-primary bg-gradient text-white p-3 m-2 w-100">
@@ -41,7 +41,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 3</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 1</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm bg-dark  bg-gradient text-white p-3 m-2 w-100">
@@ -75,7 +75,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 2</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm  bg-dark  bg-gradient text-white p-3 m-2 w-100">
@@ -83,7 +83,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 3</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 1</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm bg-danger bg-gradient text-white p-3 m-2 w-100">
@@ -116,7 +116,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 2</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm bg-danger bg-gradient text-white p-3 m-2 w-100">
@@ -124,7 +124,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 3</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 1</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm bg-secondary bg-gradient text-white p-3 m-2 w-100">
@@ -157,7 +157,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 2</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
                 <div class="card col-sm bg-secondary bg-gradient text-white p-3 m-2 w-100">
@@ -165,7 +165,7 @@ const Offers = () => {
                     <div class="card-body">
                         <h5 class="card-title">Card 3</h5>
                         <p class="card-text">Integer iaculis sapien quis velit ultricies blandit.</p>
-                        <a href="#" class="btn btn-light">Submit</a>
+                        <a href="#" class="btn btn-success">Submit</a>
                     </div>
                 </div>
             </div>
