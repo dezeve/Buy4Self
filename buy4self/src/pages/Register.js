@@ -10,14 +10,14 @@ const Register = () => {
           <div className="card">
             <div className="card-body row">
               {" "}
-              <div className="col-6 d-flex justify-content-center">
+              <div className="col-sm d-flex justify-content-center align-items-center mb-5 md-mb-0">
                 <img
                   src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-toplanti-odasi-is-birligi-yenilik-basari.webp"
                   className="img-fluid rounded"
                   alt="..."
                 />
               </div>
-              <div className="col-6 ">
+              <div className="col-sm">
                 <h3 className="mb-5 text-center">Register</h3>
 
                 <label className="form-label">Full Name</label>
