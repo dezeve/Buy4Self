@@ -5,12 +5,12 @@ const Login = () => {
   return (
     <Layout>
       {" "}
-      <div class=" d-flex justify-content-center align-items-center mt-5">
+      <div class=" d-flex justify-content-center align-items-center">
         {" "}
         <div class=" col-md-10 col-lg-10 col-xl-10">
           <div class="card shadow-2-strong">
             <div class="card-body p-5 row">
-              <div className="col-6">
+              <div className="col-sm mb-5 mb-md-0 d-flex justify-content-center align-items-center">
                 {" "}
                 <img
                   src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-toplanti-odasi-is-birligi-yenilik-basari.webp"
@@ -18,7 +18,7 @@ const Login = () => {
                   alt="..."
                 />
               </div>
-              <div className="col-6">
+              <div className="col-sm">
                 <h3 class="mb-4 text-center">Login</h3>
 
                 <label class="form-label">Email</label>
