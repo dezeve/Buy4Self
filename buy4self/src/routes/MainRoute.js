@@ -10,6 +10,8 @@ import Payment from "../pages/Payment";
 import Cart from "../pages/Cart";
 import UserProfile from "../pages/UserProfile";
 import Settings from "../pages/Settings";
+import Reviews from "../pages/Reviews";
+import OrderHistory from "../pages/OrderHistory";
 
 const routes = [
   {
@@ -60,6 +62,14 @@ const routes = [
   {
     path: "/Settings",
     component: <Settings />
+  },
+  {
+    path: "/Reviews",
+    component: <Reviews />
+  },
+  {
+    path: "/OrderHistory",
+    component: <OrderHistory />
   },
 ];
 export default routes;
