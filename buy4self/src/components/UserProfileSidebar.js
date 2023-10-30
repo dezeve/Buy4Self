@@ -10,7 +10,7 @@ const UserProfileSidebar = () => {
     return (
         <div class="container-fluid">
             <div class="row flex-nowrap">
-                <div class="col-sm-12 col-md-4 col-xl-3 px-sm-2 p-3 bg-secondary bg-gradient rounded">
+                <div class="px-sm-2 p-3 bg-secondary bg-gradient rounded w-100">
                     <div class="d-flex flex-column align-items-sm-start px-3 pt-2 text-white">
                         <p className="h5 my-4"><b>Welcome, John Doe</b></p>
                         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start gap-3" id="menu">

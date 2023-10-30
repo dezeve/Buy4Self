@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../layout/Layout";
+import UserProfileLayout from "../layout/UserProfileLayout";
 
 const OrderHistory = () => {
     return (
-        <Layout>
+        <UserProfileLayout>
             <h1>Order History</h1>
-        </Layout>
+        </UserProfileLayout>
     );
 }
 

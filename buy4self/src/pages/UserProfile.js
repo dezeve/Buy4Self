@@ -1,12 +1,11 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import UserProfileSidebar from "../components/UserProfileSidebar"
+import UserProfileLayout from "../layout/UserProfileLayout";
 
 const UserProfile = () => {
     return (
-        <Layout>
-            <UserProfileSidebar />
-        </Layout>
+        <UserProfileLayout>
+            <h1>User profile</h1>
+        </UserProfileLayout>
     );
 }
 
