@@ -16,11 +16,13 @@ const Settings = () => {
                     
                     <div class="form-body mt-3 mb-3">
                         <p className="h5"><b> <FontAwesomeIcon icon={faUser} />&nbsp;Change your username</b></p>
-                        <input class="form-control mb-5" type="text" placeholder="Enter your username here" />
+                        <input class="form-control mb-2" type="text" placeholder="Enter your username here" />
+                        <button role="button" class="btn btn-primary mb-5">Submit</button>
 
                         <p className="h5"><FontAwesomeIcon icon={faKey} />&nbsp;<b>Change your password</b></p>
                         <input class="form-control mb-2" type="password" placeholder="Enter your password here" />
-                        <input class="form-control mb-5" type="password" placeholder="Re-enter your password" />
+                        <input class="form-control mb-2" type="password" placeholder="Re-enter your password" />
+                        <button role="button" class="btn btn-primary mb-5">Submit</button>
 
                         <p className="h5"><FontAwesomeIcon icon={faImage} />&nbsp;<b>Change your profile picture</b></p>
                         <div className="d-flex justify-content-center mt-4">

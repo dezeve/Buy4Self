@@ -1,10 +1,11 @@
 import React from "react";
 import UserProfileLayout from "../layout/UserProfileLayout";
+import OrderTable from "../components/OrderTable";
 
 const OrderHistory = () => {
     return (
         <UserProfileLayout>
-            <h1>Order History</h1>
+            <OrderTable />
         </UserProfileLayout>
     );
 }
