@@ -19,21 +19,21 @@ const CartDropdown = () => {
         <FontAwesomeIcon icon={faBasketShopping} /> Cart
       </a>
       <div
-        className={`dropdown-menu dropdown-menu-end mx-auto cartDropdownInNavbar p-2
+        className={`dropdown-menu dropdown-menu-center mx-auto cartDropdownInNavbar p-2
                      ${isCartOpen ? "show" : ""}
                       `}
         data-bs-popper="static"
       >
-        <center>
+        <div className="d-flex justify-content-center">
           <label className="fw-bold">Cart Details</label>
-        </center>
-        <a className="dropdown-item">Product 1 100 TL</a>
-        <a className="dropdown-item">Product 2 100 TL</a>
+        </div>
+        <a className="dropdown-item text-start">Product 1 100 TL</a>
+        <a className="dropdown-item text-start">Product 2 100 TL</a>
         <hr className="dropdown-divider" />
 
-        <div className="">
+        <div>
           <a
-            href="/cart"
+            href="/Cart"
             className="text-white text-decoration-none btn btn-success col-12 fit-contain"
           >
             Go To Cart
