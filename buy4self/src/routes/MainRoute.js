@@ -8,7 +8,6 @@ import Register from "../pages/Register";
 import ForgotPassword from "../pages/ForgotPassword";
 import Payment from "../pages/Payment";
 import Cart from "../pages/Cart";
-import UserProfile from "../pages/UserProfile";
 import Settings from "../pages/Settings";
 import Reviews from "../pages/Reviews";
 import OrderHistory from "../pages/OrderHistory";
@@ -54,10 +53,6 @@ const routes = [
   {
     path: "/Cart",
     component: <Cart />
-  },
-  {
-    path: "/UserProfile",
-    component: <UserProfile />
   },
   {
     path: "/Settings",

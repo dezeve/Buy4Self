@@ -55,7 +55,7 @@ const Login = () => {
                 <br />
 
                 <div class="btn btn-primary btn-md btn-block col-12">
-                  <a href="/UserProfile" className="text-decoration-none text-white">Sign in</a>
+                  <a href="/Settings" className="text-decoration-none text-white">Sign in</a>
                 </div>
               </div>
             </div>
