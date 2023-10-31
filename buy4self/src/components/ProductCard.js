@@ -2,6 +2,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useCart } from "../context/CartDropdownContext";
+import StarRating from  "../components/StarRating";
 
 const ProductCard = (props) => {
   const { data: product } = props;
@@ -13,7 +14,7 @@ const ProductCard = (props) => {
   };
   return (
     <div className="card mt-3">
-      <a href={`product/${product.id}`}>
+      <a href={`product/${product.id}`} target="_blank">
         {" "}
         <img src={product.img} className="card-img-top img-fluid" alt="..." />
       </a>
@@ -27,6 +28,9 @@ const ProductCard = (props) => {
             {product.name}
           </a>
         </h5>
+        <div className="mb-2">
+          <StarRating />
+        </div>
         <a href="products?category=kategori">
           {" "}
           <span className="badge rounded-pill text-bg-light mb-2">

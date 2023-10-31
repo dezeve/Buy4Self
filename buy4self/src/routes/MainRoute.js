@@ -8,7 +8,9 @@ import Register from "../pages/Register";
 import ForgotPassword from "../pages/ForgotPassword";
 import Payment from "../pages/Payment";
 import Cart from "../pages/Cart";
-import UserProfile from "../pages/UserProfile";
+import Settings from "../pages/Settings";
+import Reviews from "../pages/Reviews";
+import OrderHistory from "../pages/OrderHistory";
 
 const routes = [
   {
@@ -53,8 +55,16 @@ const routes = [
     component: <Cart />
   },
   {
-    path: "/UserProfile",
-    component: <UserProfile />
+    path: "/Settings",
+    component: <Settings />
+  },
+  {
+    path: "/Reviews",
+    component: <Reviews />
+  },
+  {
+    path: "/OrderHistory",
+    component: <OrderHistory />
   },
 ];
 export default routes;

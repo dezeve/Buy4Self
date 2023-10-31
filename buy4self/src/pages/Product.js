@@ -25,14 +25,14 @@ const Product = () => {
   }
   return (
     <Layout>
-      <div className="col-5">
+      <div className="col-sm-5">
         <img
           src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-essiz-coworking-ofis-is-birligi-verimlilik.webp"
           className="card-img-top rounded shadow-lg"
           alt="..."
         />
       </div>
-      <div className="col-7">
+      <div className="col-sm">
         <div className="card">
           <div className="card-body">
             {" "}
@@ -59,15 +59,15 @@ const Product = () => {
               mauris at leo volutpat, ac ultrices sapien malesuada. Praesent
               rutrum leo ac erat dignissim, ac molestie erat molestie.
             </p>
-            <center>
+            <div class="d-flex justify-content-center align-items-center">
               {" "}
               <div className="row justify-content-center">
-                <div class="col-2 mt-3">
+                <div class="col-6 mt-3">
                   <div className="d-flex">
                     <div class="btn p-2" onClick={decreaseQuantity}>
                       <FontAwesomeIcon icon={faMinus} />
                     </div>
-                    <div className="">
+                    <div className="col-6">
                       <input
                         type="number"
                         class="form-control"
@@ -90,7 +90,7 @@ const Product = () => {
                   <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
                 </div>
               </div>
-            </center>
+            </div>
           </div>
         </div>
       </div>
