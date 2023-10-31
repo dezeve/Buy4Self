@@ -6,7 +6,7 @@ import StarRating from  "../components/StarRating";
 
 const ProductCard = (props) => {
   const { data: product } = props;
-  const { toggleCart, showCart } = useCart();
+  const { toggleCart } = useCart();
 
   const addToCartHandler = (productId) => {
     console.log("🚀 ~ file: ProductCard.js:11 ~ addToCartHandler ~ productId:", productId)
