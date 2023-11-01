@@ -1,10 +1,6 @@
 import React from "react";
 import Layout from "../layout/Layout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import products from "../dummyData/products.json";
-import ProductCard from "../components/ProductCard";
 import OfferProductSlider from "../components/OfferProductSlider";
 
 const Offers = () => {
@@ -39,9 +35,8 @@ const Offers = () => {
         </div>
       </div>
 
-      <div className="container my-5">
+      <div className="container mb-5 mt-3">
         <div className="row">
-          <div className="col-6 fs-3">Mega Sale</div>
           <OfferProductSlider data={products} />
         </div>
       </div>
