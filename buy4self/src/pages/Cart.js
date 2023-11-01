@@ -69,10 +69,12 @@ const Cart = () => {
             </tbody>
           </table>
           <hr />
-          <label className="text-end"> Total: 213 TL</label>
-          <br />
-          <label className="text-end"> Discount: -10 TL</label> <br />
-          <label className="text-end"> Total: 203 TL</label>
+          <div className="text-end strong fw-bold" style={{fontFamily:"Times New Roman"}}>
+            <label className="text-end"> Total: 213 TL</label>
+            <br />
+            <label className="text-end"> Discount: -10 TL</label> <br />
+            <label className="text-end"> Total: 203 TL</label>
+          </div>
         </div>
 
         <div className="mt-5 justify-content-center d-flex">
