@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 const steps = ['Step 1', 'Step 2', 'Step 3', 'Step 4'];
 
-export default function HorizontalLinearStepper() {
+function PaymentStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -64,3 +64,5 @@ export default function HorizontalLinearStepper() {
     </Box>
   );
 }
+
+export default PaymentStepper;
