@@ -46,10 +46,14 @@ const Sidebar = (props) => {
         </div>
       </div>
       <div className="col-12 mt-3 btn btn-lg text-white" style={{background: "rgb(34,193,195)"}}>
-        Special Offers
+          <a href="/Offers">
+            Special Offers
+          </a> 
       </div>
       <div className="col-12 btn btn-danger btn-lg mt-3">
-        Bargain Sale
+          <a href="/Offers">
+            Bargain Sale
+          </a>
       </div>
     </div>
   );

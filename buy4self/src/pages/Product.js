@@ -99,10 +99,14 @@ const Product = () => {
         <div className="card p-3">
         <div className="card">
             <div className="card-body row">
-              <div className="card-title col-auto mr-auto">Mustafa KAÇAR</div>
-              <div className="col-auto mr-auto"><StarRating /></div>
-              <div className="col text-end">10 October, 2023</div>
-              <p className="card-text"> Review test</p>
+              <div className="col-auto mr-auto">
+                <img className="rounded-circle img-fluid" style={{width:75, height:75}}
+                src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-essiz-coworking-ofis-is-birligi-verimlilik.webp" />
+              </div>
+              <div className="card-title col-auto mr-auto mt-4">Mustafa KAÇAR</div>
+              <div className="col-auto mr-auto mt-4"><StarRating /></div>
+              <div className="col text-end mt-4">10 October, 2023</div>
+              <p className="card-text">Review test</p>
             </div>
           </div>
 
@@ -110,10 +114,14 @@ const Product = () => {
 
           <div className="card">
             <div className="card-body row">
-              <div className="card-title col-auto mr-auto">Mustafa KAÇAR</div>
-              <div className="col-auto mr-auto"><StarRating /></div>
-              <div className="col text-end">10 October, 2023</div>
-              <p className="card-text"> Review test</p>
+              <div className="col-auto mr-auto">
+                <img className="rounded-circle img-fluid" style={{width:75, height:75}}
+                src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-essiz-coworking-ofis-is-birligi-verimlilik.webp" />
+              </div>
+              <div className="card-title col-auto mr-auto mt-4">Mustafa KAÇAR</div>
+              <div className="col-auto mr-auto mt-4"><StarRating /></div>
+              <div className="col text-end mt-4">10 October, 2023</div>
+              <p className="card-text">Review test</p>
             </div>
           </div>
         </div>

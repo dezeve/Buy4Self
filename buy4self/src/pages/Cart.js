@@ -1,16 +1,9 @@
-import { faMinus, faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
 import Layout from "../layout/Layout";
+import QuantitySelector from "../components/QuantitySelector";
 
 const Cart = () => {
-      const [quantity, setQuantity] = useState(1);
-     const increaseQuantity = () => {
-       quantity < 5 && setQuantity(quantity + 1);
-     };
-     const decreaseQuantity = () => {
-       quantity > 1 && setQuantity(quantity - 1);
-     };
   return (
     <Layout>
       <div class="p-5 rounded">
@@ -65,15 +58,7 @@ const Cart = () => {
                 </td>
                 <td class="border-0 align-middle">
                   {" "}
-                  <div className="d-flex">
-                    <div class="btn p-2" onClick={decreaseQuantity}>
-                      <FontAwesomeIcon icon={faMinus} />
-                    </div>
-                    <strong className=" p-2">{quantity}</strong>
-                    <div class="btn p-2" onClick={increaseQuantity}>
-                      <FontAwesomeIcon icon={faPlus} />
-                    </div>
-                  </div>
+                  <QuantitySelector />
                 </td>
                 <td class="border-0 align-middle">
                   <a href="#" class="text-dark">
@@ -84,10 +69,12 @@ const Cart = () => {
             </tbody>
           </table>
           <hr />
-          <label className="text-end"> Total: 213 TL</label>
-          <br />
-          <label className="text-end"> Discount: -10 TL</label> <br />
-          <label className="text-end"> Total: 203 TL</label>
+          <div className="text-end strong fw-bold" style={{fontFamily:"Times New Roman"}}>
+            <label className="text-end"> Total: 213 TL</label>
+            <br />
+            <label className="text-end"> Discount: -10 TL</label> <br />
+            <label className="text-end"> Total: 203 TL</label>
+          </div>
         </div>
 
         <div className="mt-5 justify-content-center d-flex">

@@ -2,6 +2,7 @@ import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useMemo } from "react";
 import { useCart } from "../context/CartDropdownContext";
+import QuantitySelector from "../components/QuantitySelector";
 
 const CartDropdown = () => {
   const { isCartOpen, toggleCart } = useCart();
@@ -27,8 +28,18 @@ const CartDropdown = () => {
         <div className="d-flex justify-content-center">
           <label className="fw-bold">Cart Details</label>
         </div>
-        <a className="dropdown-item text-start">Product 1 100 TL</a>
-        <a className="dropdown-item text-start">Product 2 100 TL</a>
+        <div className="row">
+          <a className="dropdown-item text-start col">Product 1 100 TL</a>
+           <div className="col text-end">
+              <QuantitySelector />
+           </div>
+        </div>
+        <div className="row">
+          <a className="dropdown-item text-start col">Product 1 100 TL</a>
+           <div className="col text-end">
+              <QuantitySelector />
+           </div>
+        </div>
         <hr className="dropdown-divider" />
 
         <div>
