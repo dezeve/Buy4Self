@@ -13,7 +13,7 @@ const Payment = () => {
                     <div className="col-sm-7 border rounded p-3">
                         <PaymentStepper/>
                     </div>
-                    <div className="col-sm-4 border rounded p-3">
+                    <div className="col-sm-4 border rounded p-3 mt-5 mt-md-0">
                         <PaymentCard />
                     </div>
                 </div>

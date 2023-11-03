@@ -6,7 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const steps = ['Step 1', 'Step 2', 'Step 3', 'Step 4'];
+const steps = ['Personal information', 'Address information', 'Submit'];
 
 function PaymentStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -18,6 +18,37 @@ function PaymentStepper() {
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
+
+  function GetStep(stepNumber) {
+    switch(stepNumber){
+      case 1:
+        return(
+          <div class="my-5">
+            <label>First name</label>
+            <input type="text" placeholder="Enter your first name here" class="form-control mb-3" />
+            <label>Last name</label>
+            <input type="text" placeholder="Enter your last name here" class="form-control mb-3" />
+            <label>Email adress</label>
+            <input type="email" placeholder="Enter your email adress here" class="form-control mb-3" />
+            <label>Phone number</label>
+            <input type="tel" placeholder="Enter your phone number here" class="form-control" />
+          </div>
+        )
+      case 2:
+        return(
+          <div className="my-5">
+            <label>Enter your adress</label>
+            <textarea class="form-control" rows="10"></textarea>
+          </div>
+        )
+      case 3:
+        return(
+          <div className="my-5">
+            <h4>Click the submit button to confirm your order.</h4>
+          </div>
+        )
+    }
+  }
 
   return (
     <Box sx={{ width: '100%' }}>
@@ -35,7 +66,9 @@ function PaymentStepper() {
       {activeStep === steps.length ? (
         <React.Fragment>
           <Typography sx={{ mt: 2, mb: 1 }}>
-            All steps completed - you&apos;re finished
+            <div className="my-5">
+              <h4>Your transactions are completed, you can fill in your card information and complete your shopping.</h4>
+            </div>
           </Typography>
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Box sx={{ flex: '1 1 auto' }} />
@@ -43,7 +76,7 @@ function PaymentStepper() {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+          <Typography sx={{ mt: 2, mb: 1 }}>{GetStep(activeStep + 1)}</Typography>
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Button
               color="inherit"
@@ -56,7 +89,7 @@ function PaymentStepper() {
             <Box sx={{ flex: '1 1 auto' }} />
 
             <Button onClick={handleNext}>
-              {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+              {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
             </Button>
           </Box>
         </React.Fragment>
