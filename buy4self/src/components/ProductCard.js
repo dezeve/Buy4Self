@@ -14,7 +14,7 @@ const ProductCard = (props) => {
   };
   return (
     <div className="card mt-3">
-      <a href={`product/${product.id}`} target="_blank">
+      <a href={`product/${product.id}`} target="_blank" rel="noopener noreferrer">
         {" "}
         <img src={product.img} className="card-img-top img-fluid" alt="..." />
       </a>
