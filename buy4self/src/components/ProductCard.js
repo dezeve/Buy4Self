@@ -6,15 +6,15 @@ import StarRating from  "../components/StarRating";
 
 const ProductCard = (props) => {
   const { data: product } = props;
-  const { toggleCart } = useCart();
+  const { putCart } = useCart();
 
   const addToCartHandler = (productId) => {
     console.log("🚀 ~ file: ProductCard.js:11 ~ addToCartHandler ~ productId:", productId)
-    toggleCart();
+    putCart();
   };
   return (
     <div className="card mt-3">
-      <a href={`product/${product.id}`} target="_blank">
+      <a href={`product/${product.id}`} target="_blank" rel="noopener noreferrer">
         {" "}
         <img src={product.img} className="card-img-top img-fluid" alt="..." />
       </a>

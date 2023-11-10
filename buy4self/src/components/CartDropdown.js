@@ -13,7 +13,6 @@ const CartDropdown = () => {
           isCartOpen ? "show" : ""
         } `}
         role="button"
-        data-bs-toggle="dropdown"
         aria-expanded="true"
         onClick={toggleCart}
       >

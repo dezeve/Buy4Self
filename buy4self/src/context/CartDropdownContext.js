@@ -9,9 +9,12 @@ export function CartProvider({ children }) {
     setIsCartOpen(!isCartOpen);    
   };
 
+  const putCart = () => {
+    setIsCartOpen(true);
+  };
 
   return (
-    <CartDropdownContext.Provider value={{ isCartOpen, toggleCart }}>
+    <CartDropdownContext.Provider value={{ isCartOpen, toggleCart, putCart }}>
       {children}
     </CartDropdownContext.Provider>
   );
