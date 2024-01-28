@@ -3,12 +3,6 @@
 
 Hi! Buy4Self is an essential e-commerce application.  Below things we used;
 
-**Back End**
-
- - **Spring Boot**
- - Swagger (for API schema)
- - Spring Security for auth
- 
 **Front End**
 
  - **ReactJS**

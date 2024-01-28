@@ -3,7 +3,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StarRating = () => {
-    const [rating, setRating] = useState(0);
+    const [rating, setRating] = useState(3);
     const [hover, setHover] = useState(0);
     return(
         <div className="star-rating">
