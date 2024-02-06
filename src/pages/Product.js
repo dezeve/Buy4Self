@@ -25,25 +25,25 @@ const Product = () => {
   }
   return (
     <Layout>
-      <div className="col-sm-5">
+      <div classNameName="col-sm-5">
         <img
           src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-essiz-coworking-ofis-is-birligi-verimlilik.webp"
-          className="card-img-top rounded shadow-lg"
+          classNameName="card-img-top rounded shadow-lg"
           alt="..."
         />
       </div>
-      <div className="col-sm">
-        <div className="card">
-          <div className="card-body">
+      <div classNameName="col-sm">
+        <div classNameName="card">
+          <div classNameName="card-body">
             {" "}
-            <h3 className="card-title"> Product </h3>
+            <h3 classNameName="card-title"> Product </h3>
             {
               //FOR reviews icons etc
 
               <StarRating />
             }
-            <div className="price text-third fw-bold mt-3">128 TL</div>
-            <p className="card-text mt-4">
+            <div classNameName="price text-third fw-bold mt-3">128 TL</div>
+            <p classNameName="card-text mt-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               venenatis cursus quam eu blandit. Aliquam porttitor rhoncus enim
               quis ullamcorper. Maecenas quis pulvinar lacus, quis ornare dui.
@@ -59,18 +59,18 @@ const Product = () => {
               mauris at leo volutpat, ac ultrices sapien malesuada. Praesent
               rutrum leo ac erat dignissim, ac molestie erat molestie.
             </p>
-            <div class="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center">
               {" "}
-              <div className="row justify-content-center">
-                <div class="col-6 mt-3">
-                  <div className="d-flex">
-                    <div class="btn p-2" onClick={decreaseQuantity}>
+              <div classNameName="row justify-content-center">
+                <div className="col-6 mt-3">
+                  <div classNameName="d-flex">
+                    <div className="btn p-2" onClick={decreaseQuantity}>
                       <FontAwesomeIcon icon={faMinus} />
                     </div>
-                    <div className="col-6">
+                    <div classNameName="col-6">
                       <input
                         type="number"
-                        class="form-control"
+                        className="form-control"
                         style={{ width: "60px" }}
                         value={quantity}
                         onChange={(e)=>setQuantity(e.target.value)}
@@ -78,13 +78,13 @@ const Product = () => {
                         max={5}
                       />
                     </div>
-                    <div class="btn p-2 " onClick={increaseQuantity}>
+                    <div className="btn p-2 " onClick={increaseQuantity}>
                       <FontAwesomeIcon icon={faPlus} />
                     </div>
                   </div>
                 </div>
                 <div
-                  className="btn btn-success col-6 mt-3"
+                  classNameName="btn btn-success col-6 mt-3"
                   onClick={() => addToCartHandler()}
                 >
                   <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
@@ -95,33 +95,33 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="col-12 mt-5">
-        <div className="card p-3">
-        <div className="card">
-            <div className="card-body row">
-              <div className="col-auto mr-auto">
-                <img className="rounded-circle img-fluid" style={{width:75, height:75}}
+      <div classNameName="col-12 mt-5">
+        <div classNameName="card p-3">
+        <div classNameName="card">
+            <div classNameName="card-body row">
+              <div classNameName="col-auto mr-auto">
+                <img classNameName="rounded-circle img-fluid" style={{width:75, height:75}}
                 src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-essiz-coworking-ofis-is-birligi-verimlilik.webp" />
               </div>
-              <div className="card-title col-auto mr-auto mt-4">Mustafa KAÇAR</div>
-              <div className="col-auto mr-auto mt-4"><StarRating /></div>
-              <div className="col text-end mt-4">10 October, 2023</div>
-              <p className="card-text">Review test</p>
+              <div classNameName="card-title col-auto mr-auto mt-4">Mustafa KAÇAR</div>
+              <div classNameName="col-auto mr-auto mt-4"><StarRating /></div>
+              <div classNameName="col text-end mt-4">10 October, 2023</div>
+              <p classNameName="card-text">Review test</p>
             </div>
           </div>
 
           <hr />
 
-          <div className="card">
-            <div className="card-body row">
-              <div className="col-auto mr-auto">
-                <img className="rounded-circle img-fluid" style={{width:75, height:75}}
+          <div classNameName="card">
+            <div classNameName="card-body row">
+              <div classNameName="col-auto mr-auto">
+                <img classNameName="rounded-circle img-fluid" style={{width:75, height:75}}
                 src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-essiz-coworking-ofis-is-birligi-verimlilik.webp" />
               </div>
-              <div className="card-title col-auto mr-auto mt-4">Mustafa KAÇAR</div>
-              <div className="col-auto mr-auto mt-4"><StarRating /></div>
-              <div className="col text-end mt-4">10 October, 2023</div>
-              <p className="card-text">Review test</p>
+              <div classNameName="card-title col-auto mr-auto mt-4">Mustafa KAÇAR</div>
+              <div classNameName="col-auto mr-auto mt-4"><StarRating /></div>
+              <div classNameName="col text-end mt-4">10 October, 2023</div>
+              <p classNameName="card-text">Review test</p>
             </div>
           </div>
         </div>

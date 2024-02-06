@@ -13,11 +13,11 @@ const QuantitySelector = () => {
 
     return (
         <div className="d-flex">
-            <div class="btn p-2" onClick={decreaseQuantity}>
+            <div className="btn p-2" onClick={decreaseQuantity}>
                 <FontAwesomeIcon icon={faMinus} />
             </div>
             <strong className=" p-2">{quantity}</strong>
-            <div class="btn p-2" onClick={increaseQuantity}>
+            <div className="btn p-2" onClick={increaseQuantity}>
                 <FontAwesomeIcon icon={faPlus} />
             </div>
         </div>

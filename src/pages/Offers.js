@@ -6,10 +6,10 @@ import OfferProductSlider from "../components/OfferProductSlider";
 const Offers = () => {
   return (
     <Layout>
-      <div class="p-5 bg-primary bg-gradient text-white rounded">
-        <div class="row">
-          <div class="col-sm">
-            <h1 class="mb-4">Flash Sales</h1>
+      <div className="p-5 bg-primary bg-gradient text-white rounded">
+        <div className="row">
+          <div className="col-sm">
+            <h1 className="mb-4">Flash Sales</h1>
             Integer iaculis sapien quis velit ultricies blandit. Nullam
             pellentesque porttitor turpis eget sodales. Vivamus eros ligula,
             convallis at aliquam et, finibus at mi. Phasellus accumsan semper
@@ -23,7 +23,7 @@ const Offers = () => {
             senectus et netus et malesuada fames ac turpis egestas. In hac
             habitasse platea dictumst. Suspendisse potenti.
           </div>
-          <div class="col-sm">
+          <div className="col-sm">
             <img
               className="rounded img-fluid"
               src="https://images.unsplash.com/photo-1583573636246-18cb2246697f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1938"

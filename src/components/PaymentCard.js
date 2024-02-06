@@ -9,19 +9,19 @@ const PaymentCard = () => {
             <hr className="my-3"/>
             <form className="my-4">
                 <label>Card number</label>
-                <input type="text" placeholder="Enter your card number here" class="form-control mb-3" />
+                <input type="text" placeholder="Enter your card number here" className="form-control mb-3" />
                 <div className="row mb-3">
                     <div className="col-6">
-                        <label class="form-label">MM / YY</label>
-                        <input type="text" placeholder="MM / YY" class="form-control" />
+                        <label className="form-label">MM / YY</label>
+                        <input type="text" placeholder="MM / YY" className="form-control" />
                     </div>
                     <div className="col-6">
-                        <label for="exampleInputEmail1" class="form-label">CVV code</label>
-                        <input type="password" placeholder="CVV code" class="form-control" />
+                        <label for="exampleInputEmail1" className="form-label">CVV code</label>
+                        <input type="password" placeholder="CVV code" className="form-control" />
                     </div>
                 </div>
                 <label>Name</label>
-                <input type="text" placeholder="Name on the card" class="form-control" />
+                <input type="text" placeholder="Name on the card" className="form-control" />
             </form>
             <hr />
             <div className="row">
@@ -41,7 +41,7 @@ const PaymentCard = () => {
             </div>
             <hr />
             <div className='d-grid'>
-                <button type="submit" class="btn btn-primary mb-2 mt-3">
+                <button type="submit" className="btn btn-primary mb-2 mt-3">
                     Make payment
                 </button>
             </div>

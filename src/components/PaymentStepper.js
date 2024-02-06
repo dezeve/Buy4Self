@@ -23,22 +23,22 @@ function PaymentStepper() {
     switch(stepNumber){
       case 1:
         return(
-          <div class="my-5">
+          <div className="my-5">
             <label>First name</label>
-            <input type="text" placeholder="Enter your first name here" class="form-control mb-3" />
+            <input type="text" placeholder="Enter your first name here" className="form-control mb-3" />
             <label>Last name</label>
-            <input type="text" placeholder="Enter your last name here" class="form-control mb-3" />
+            <input type="text" placeholder="Enter your last name here" className="form-control mb-3" />
             <label>Email adress</label>
-            <input type="email" placeholder="Enter your email adress here" class="form-control mb-3" />
+            <input type="email" placeholder="Enter your email adress here" className="form-control mb-3" />
             <label>Phone number</label>
-            <input type="tel" placeholder="Enter your phone number here" class="form-control" />
+            <input type="tel" placeholder="Enter your phone number here" className="form-control" />
           </div>
         )
       case 2:
         return(
           <div className="my-5">
             <label>Enter your adress</label>
-            <textarea class="form-control" rows="10"></textarea>
+            <textarea className="form-control" rows="10"></textarea>
           </div>
         )
       case 3:

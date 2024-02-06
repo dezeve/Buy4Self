@@ -6,42 +6,42 @@ import QuantitySelector from "../components/QuantitySelector";
 const Cart = () => {
   return (
     <Layout>
-      <div class="p-5 rounded">
+      <div className="p-5 rounded">
         <h1>Cart</h1>
-        <div class="table-responsive">
-          <table class="table">
+        <div className="table-responsive">
+          <table className="table">
             <thead>
               <tr>
-                <th scope="col" class="border-0 bg-light">
-                  <div class="p-2 px-3 text-uppercase">Product</div>
+                <th scope="col" className="border-0 bg-light">
+                  <div className="p-2 px-3 text-uppercase">Product</div>
                 </th>
-                <th scope="col" class="border-0 bg-light">
-                  <div class="py-2 text-uppercase">Price</div>
+                <th scope="col" className="border-0 bg-light">
+                  <div className="py-2 text-uppercase">Price</div>
                 </th>
-                <th scope="col" class="border-0 bg-light">
-                  <div class="py-2 text-uppercase">Quantity</div>
+                <th scope="col" className="border-0 bg-light">
+                  <div className="py-2 text-uppercase">Quantity</div>
                 </th>
-                <th scope="col" class="border-0 bg-light">
-                  <div class="py-2 text-uppercase">Remove</div>
+                <th scope="col" className="border-0 bg-light">
+                  <div className="py-2 text-uppercase">Remove</div>
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row" class="border-0">
-                  <div class="p-2">
+                <th scope="row" className="border-0">
+                  <div className="p-2">
                     <img
                       src="https://bootstrapious.com/i/snippets/sn-cart/product-1.jpg"
                       alt=""
                       width="70"
-                      class="img-fluid rounded shadow-sm"
+                      className="img-fluid rounded shadow-sm"
                     />
-                    <div class="ml-3 d-inline-block align-middle p-3">
-                      <h5 class="mb-0">
+                    <div className="ml-3 d-inline-block align-middle p-3">
+                      <h5 className="mb-0">
                         {" "}
                         <a
                           href="#"
-                          class="text-dark d-inline-block align-middle text-decoration-none"
+                          className="text-dark d-inline-block align-middle text-decoration-none"
                         >
                           Timex Unisex Originals
                         </a>
@@ -53,15 +53,15 @@ const Cart = () => {
                     </div>
                   </div>
                 </th>
-                <td class="border-0 align-middle">
+                <td className="border-0 align-middle">
                   <strong>79.00 TL</strong>
                 </td>
-                <td class="border-0 align-middle">
+                <td className="border-0 align-middle">
                   {" "}
                   <QuantitySelector />
                 </td>
-                <td class="border-0 align-middle">
-                  <a href="#" class="text-dark">
+                <td className="border-0 align-middle">
+                  <a href="#" className="text-dark">
                     <FontAwesomeIcon icon={faTrash} className="ml-2" />
                   </a>
                 </td>
@@ -78,13 +78,13 @@ const Cart = () => {
         </div>
 
         <div className="mt-5 justify-content-center d-flex">
-        <button type="button" class="btn btn-success">
+        <button type="button" className="btn btn-success">
             <a href="/">
               Continue Shopping
             </a>
           </button>
           &nbsp;
-          <button type="button" class="btn btn-primary">
+          <button type="button" className="btn btn-primary">
             <a href="/Payment">
               Proceed To Payment
             </a>
