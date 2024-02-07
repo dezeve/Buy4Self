@@ -1,25 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../layout/Layout";
 import Sidebar from "../components/Sidebar";
 import ProductCard from "../components/ProductCard";
 import productsData from "../dummyData/products.json";
+import Navbar from "../components/Navbar";
+
 const Home = () => {
+
+  const [word, setWord] = useState("")
+
+  if (word !== "") {
+    var filteredData = productsData.filter(product => product.name.toLowerCase().includes(word))
+  } else {
+    filteredData = productsData
+  }
+
   return (
     <Layout>
+      <Navbar changeWord={word => setWord(word)} />
       <div className="col-md-4 col-xl-3 col-xs-12 ">
-        {" "}
         <Sidebar />
       </div>
       <div className="col-md-8 col-xl-9 col-xs-12 ">
         <div className="row">
-          {" "}
-          {productsData.map((product) => (
+          {filteredData.map((product) => (
             <div className="col-md-3 col-md-6 col-sm-4 col-lg-3">
-              {" "}
               <ProductCard data={product} />
             </div>
           ))}
-       
         </div>
       </div>
     </Layout>

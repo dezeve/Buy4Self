@@ -3,10 +3,22 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import CartDropdown from "./CartDropdown";
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+  const inputRef = useRef(null)
+  const [search, setSearch] = useState("Search")
+
+  var searchInput = ""
+
+  function takeSearchInput() {
+    searchInput = inputRef.current.value.toLowerCase()
+    searchInput = searchInput.trim()
+    setSearch(searchInput)
+  }
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary text-light fixed-top">
@@ -41,17 +53,20 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <form className="d-flex mx-auto col-lg-6 col-xs-9 col-sm-9 mx-auto">
+            <div className="d-flex mx-auto col-lg-6 col-xs-9 col-sm-9 mx-auto">
               <input
+                id="searchBox"
                 className="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder={search}
                 aria-label="Search"
+                ref={inputRef}
               />
-              <button className="btn btn-outline-light col-4" type="submit">
+              <button onClick={() => {takeSearchInput(); props.changeWord(searchInput)}}
+               className="btn btn-outline-light col-4" type="submit">
                 <FontAwesomeIcon icon={faMagnifyingGlass} /> Search
               </button>
-            </form>
+            </div>
             <ul className="navbar-nav ml-auto">
               <li className="d-none d-lg-block">
                 <div className="nav-item dropdown ">
