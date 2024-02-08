@@ -1,117 +1,462 @@
- [
-        {
+[
+    {
+        "id": 1,
+        "name": "Electronix X1",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 29.99,
+        "stock": 15,
+        "category": {
             "id": 1,
-            "name": "Electronix X1",
-            "img": "https://placehold.co/600x400/EEE/31343C",
-            "price": 29.99,
-            "stock": 15,
-            "category": {
-                "id": 1,
-                "name": "Electronics"
-            },
-            "reviews": [
-                {
-                    "id": 101,
-                    "rating": 4.5,
-                    "comment": "Great product, highly recommended."
-                },
-                {
-                    "id": 102,
-                    "rating": 5.0,
-                    "comment": "Very satisfied, thank you!"
-                }
-            ]
+            "name": "Electronics"
         },
-        {
+        "reviews": [
+            {
+                "id": 101,
+                "rating": 4.5,
+                "comment": "Great product, highly recommended."
+            },
+            {
+                "id": 102,
+                "rating": 5.0,
+                "comment": "Very satisfied, thank you!"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Fashionista A2",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 49.99,
+        "stock": 20,
+        "category": {
             "id": 2,
-            "name": "Fashionista A2",
-            "img": "https://placehold.co/600x400/EEE/31343C",
-            "price": 49.99,
-            "stock": 20,
-            "category": {
-                "id": 2,
-                "name": "Clothing"
-            },
-            "reviews": [
-                {
-                    "id": 201,
-                    "rating": 4.0,
-                    "comment": "Good product for the price."
-                },
-                {
-                    "id": 202,
-                    "rating": 3.5,
-                    "comment": "Average product, better options available."
-                }
-            ]
+            "name": "Clothing"
         },
-        {
+        "reviews": [
+            {
+                "id": 201,
+                "rating": 4.0,
+                "comment": "Good product for the price."
+            },
+            {
+                "id": 202,
+                "rating": 3.5,
+                "comment": "Average product, better options available."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Home Essentials H3",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 39.99,
+        "stock": 12,
+        "category": {
             "id": 3,
-            "name": "Home Essentials H3",
-            "img": "https://placehold.co/600x400/EEE/31343C",
-            "price": 39.99,
-            "stock": 12,
-            "category": {
-                "id": 3,
-                "name": "Home & Garden"
-            },
-            "reviews": [
-                {
-                    "id": 301,
-                    "rating": 4.2,
-                    "comment": "Perfect for my needs."
-                },
-                {
-                    "id": 302,
-                    "rating": 4.8,
-                    "comment": "Excellent quality."
-                }
-            ]
+            "name": "Home & Garden"
         },
-        {
+        "reviews": [
+            {
+                "id": 301,
+                "rating": 4.2,
+                "comment": "Perfect for my needs."
+            },
+            {
+                "id": 302,
+                "rating": 4.8,
+                "comment": "Excellent quality."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Fitness Pro F4",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 69.99,
+        "stock": 8,
+        "category": {
             "id": 4,
-            "name": "Fitness Pro F4",
-            "img": "https://placehold.co/600x400/EEE/31343C",
-            "price": 69.99,
-            "stock": 8,
-            "category": {
-                "id": 4,
-                "name": "Sports & Fitness"
-            },
-            "reviews": [
-                {
-                    "id": 401,
-                    "rating": 4.7,
-                    "comment": "Great for workouts."
-                },
-                {
-                    "id": 402,
-                    "rating": 4.4,
-                    "comment": "Good value for the price."
-                }
-            ]
+            "name": "Sports & Fitness"
         },
-        {
-            "id": 5,
-            "name": "Kitchen Master K5",
-            "img": "https://placehold.co/600x400/EEE/31343C",
-            "price": 54.99,
-            "stock": 10,
-            "category": {
-                "id": 5,
-                "name": "Kitchen Appliances"
+        "reviews": [
+            {
+                "id": 401,
+                "rating": 4.7,
+                "comment": "Great for workouts."
             },
-            "reviews": [
-                {
-                    "id": 501,
-                    "rating": 4.9,
-                    "comment": "Makes cooking a breeze!"
-                },
-                {
-                    "id": 502,
-                    "rating": 4.6,
-                    "comment": "Highly recommended for the kitchen."
-                }
-            ]
-        }
-    ]
+            {
+                "id": 402,
+                "rating": 4.4,
+                "comment": "Good value for the price."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Kitchen Master K5",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 54.99,
+        "stock": 10,
+        "category": {
+            "id": 5,
+            "name": "Kitchen Appliances"
+        },
+        "reviews": [
+            {
+                "id": 501,
+                "rating": 4.9,
+                "comment": "Makes cooking a breeze!"
+            },
+            {
+                "id": 502,
+                "rating": 4.6,
+                "comment": "Highly recommended for the kitchen."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Smart Coffee Maker C6",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 39.99,
+        "stock": 15,
+        "category": {
+            "id": 5,
+            "name": "Kitchen Appliances"
+        },
+        "reviews": [
+            {
+                "id": 601,
+                "rating": 4.7,
+                "comment": "Start your day with a perfect cup of coffee!"
+            },
+            {
+                "id": 602,
+                "rating": 4.5,
+                "comment": "Easy to use and clean."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Electric Blender B7",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 29.99,
+        "stock": 20,
+        "category": {
+            "id": 5,
+            "name": "Kitchen Appliances"
+        },
+        "reviews": [
+            {
+                "id": 701,
+                "rating": 4.8,
+                "comment": "Smoothies, soups, and sauces made effortlessly!"
+            },
+            {
+                "id": 702,
+                "rating": 4.7,
+                "comment": "A must-have for any kitchen."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Digital Food Scale D8",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 19.99,
+        "stock": 25,
+        "category": {
+            "id": 5,
+            "name": "Kitchen Appliances"
+        },
+        "reviews": [
+            {
+                "id": 801,
+                "rating": 4.6,
+                "comment": "Accurate measurements for precise cooking."
+            },
+            {
+                "id": 802,
+                "rating": 4.4,
+                "comment": "Compact and easy to store."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Stainless Steel Toaster S9",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 49.99,
+        "stock": 18,
+        "category": {
+            "id": 5,
+            "name": "Kitchen Appliances"
+        },
+        "reviews": [
+            {
+                "id": 901,
+                "rating": 4.5,
+                "comment": "Perfectly toasted slices every time!"
+            },
+            {
+                "id": 902,
+                "rating": 4.3,
+                "comment": "Sleek design and durable."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Non-Stick Griddle N10",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 59.99,
+        "stock": 12,
+        "category": {
+            "id": 5,
+            "name": "Kitchen Appliances"
+        },
+        "reviews": [
+            {
+                "id": 1001,
+                "rating": 4.7,
+                "comment": "Great for pancakes, eggs, and more!"
+            },
+            {
+                "id": 1002,
+                "rating": 4.6,
+                "comment": "Non-stick surface makes cooking a breeze."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Wireless Earbuds W11",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 39.99,
+        "stock": 20,
+        "category": {
+            "id": 1,
+            "name": "Electronics"
+        },
+        "reviews": [
+            {
+                "id": 1101,
+                "rating": 4.8,
+                "comment": "Crystal-clear sound quality!"
+            },
+            {
+                "id": 1102,
+                "rating": 4.6,
+                "comment": "Comfortable fit for long listening sessions."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Portable Power Bank P12",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 24.99,
+        "stock": 30,
+        "category": {
+            "id": 1,
+            "name": "Electronics"
+        },
+        "reviews": [
+            {
+                "id": 1201,
+                "rating": 4.7,
+                "comment": "Keeps my devices charged on the go!"
+            },
+            {
+                "id": 1202,
+                "rating": 4.5,
+                "comment": "Slim design, fits in my pocket easily."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Smartphone Stand S13",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 9.99,
+        "stock": 50,
+        "category": {
+            "id": 1,
+            "name": "Electronics"
+        },
+        "reviews": [
+            {
+                "id": 1301,
+                "rating": 4.4,
+                "comment": "Sturdy and adjustable."
+            },
+            {
+                "id": 1302,
+                "rating": 4.3,
+                "comment": "Perfect for video calls and watching movies."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Bluetooth Speaker B14",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 59.99,
+        "stock": 22,
+        "category": {
+            "id": 1,
+            "name": "Electronics"
+        },
+        "reviews": [
+            {
+                "id": 1401,
+                "rating": 4.6,
+                "comment": "Impressive sound quality!"
+            },
+            {
+                "id": 1402,
+                "rating": 4.4,
+                "comment": "Sleek design and easy pairing."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "USB-C Charging Cable U15",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 12.99,
+        "stock": 40,
+        "category": {
+            "id": 1,
+            "name": "Electronics"
+        },
+        "reviews": [
+            {
+                "id": 1501,
+                "rating": 4.5,
+                "comment": "Durable and fast charging."
+            },
+            {
+                "id": 1502,
+                "rating": 4.3,
+                "comment": "Long enough for convenience."
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Casual Denim Jacket D16",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 39.99,
+        "stock": 18,
+        "category": {
+            "id": 2,
+            "name": "Clothing"
+        },
+        "reviews": [
+            {
+                "id": 1601,
+                "rating": 4.3,
+                "comment": "Perfect for a stylish yet relaxed look."
+            },
+            {
+                "id": 1602,
+                "rating": 4.2,
+                "comment": "Versatile and comfortable."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Striped Sweater S17",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 29.99,
+        "stock": 25,
+        "category": {
+            "id": 2,
+            "name": "Clothing"
+        },
+        "reviews": [
+            {
+                "id": 1701,
+                "rating": 4.5,
+                "comment": "Classic design, great for layering."
+            },
+            {
+                "id": 1702,
+                "rating": 4.4,
+                "comment": "Soft and cozy."
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Printed Maxi Dress P18",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 59.99,
+        "stock": 12,
+        "category": {
+            "id": 2,
+            "name": "Clothing"
+        },
+        "reviews": [
+            {
+                "id": 1801,
+                "rating": 4.7,
+                "comment": "Elegant and flattering."
+            },
+            {
+                "id": 1802,
+                "rating": 4.6,
+                "comment": "Perfect for special occasions."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Leather Crossbody Bag L19",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 44.99,
+        "stock": 20,
+        "category": {
+            "id": 2,
+            "name": "Clothing"
+        },
+        "reviews": [
+            {
+                "id": 1901,
+                "rating": 4.8,
+                "comment": "Compact and stylish."
+            },
+            {
+                "id": 1902,
+                "rating": 4.7,
+                "comment": "Fits essentials perfectly."
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Knit Beanie Hat K20",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 14.99,
+        "stock": 30,
+        "category": {
+            "id": 2,
+            "name": "Clothing"
+        },
+        "reviews": [
+            {
+                "id": 2001,
+                "rating": 4.4,
+                "comment": "Warm and comfortable."
+            },
+            {
+                "id": 2002,
+                "rating": 4.3,
+                "comment": "Great for chilly days."
+            }
+        ]
+    }
+]

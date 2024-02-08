@@ -62,8 +62,8 @@ const Navbar = (props) => {
                 aria-label="Search"
                 ref={inputRef}
               />
-              <button onClick={() => {takeSearchInput(); props.changeWord(searchInput)}}
-               className="btn btn-outline-light col-4" type="submit">
+              <button onClick={() => { takeSearchInput(); props.changeWord(searchInput) }}
+                className="btn btn-outline-light col-4" type="submit">
                 <FontAwesomeIcon icon={faMagnifyingGlass} /> Search
               </button>
             </div>
