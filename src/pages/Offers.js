@@ -25,7 +25,7 @@ const Offers = () => {
           </div>
           <div className="col-sm">
             <img
-              className="rounded img-fluid"
+              className="rounded img-fluid mt-4 mt-sm-0"
               src="https://images.unsplash.com/photo-1583573636246-18cb2246697f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1938"
               alt="sale"
               width="700"

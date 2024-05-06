@@ -6,8 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { useEffect } from "react";
 import categoriesData from "../dummyData/categories.json";
+
 const Sidebar = (props) => {
   const { active: activeCategoryId } = props;
+
   /* useEffect(() => {
     fetchCategories();
   }, []);
@@ -20,9 +22,7 @@ const Sidebar = (props) => {
     <div>
       <div className="px-sm-2 px-0 mr-0 rounded mt-3 bg-secondary">
         <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 pb-4 text-white ">
-          <br />
-          <h4>Categories</h4>
-          <br />
+          <h4 className="mt-4 mb-3">Categories</h4>
           <ul
             className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
             id="menu"
@@ -45,15 +45,15 @@ const Sidebar = (props) => {
           </ul>
         </div>
       </div>
-      <div className="col-12 mt-3 btn btn-lg text-white" style={{background: "rgb(34,193,195)"}}>
-          <a href="/Offers">
-            Special Offers
-          </a> 
+      <div className="col-12 mt-3 btn btn-lg text-white" style={{ background: "rgb(34,193,195)" }}>
+        <a href="/Offers">
+          Special Offers
+        </a>
       </div>
       <div className="col-12 btn btn-danger btn-lg mt-3">
-          <a href="/Offers">
-            Bargain Sale
-          </a>
+        <a href="/Offers">
+          Bargain Sale
+        </a>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ const Home = () => {
       <div className="col-md-8 col-xl-9 col-xs-12 ">
         <div className="row">
           {filteredData.map((product) => (
-            <div className="col-md-3 col-md-6 col-sm-4 col-lg-3">
+            <div className="col-md-3 col-md-6 col-sm-4 col-lg-3 mb-3">
               <ProductCard data={product} />
             </div>
           ))}

@@ -20,9 +20,9 @@ function PaymentStepper() {
   };
 
   function GetStep(stepNumber) {
-    switch(stepNumber){
+    switch (stepNumber) {
       case 1:
-        return(
+        return (
           <div className="my-5">
             <label>First name</label>
             <input type="text" placeholder="Enter your first name here" className="form-control mb-3" />
@@ -35,14 +35,14 @@ function PaymentStepper() {
           </div>
         )
       case 2:
-        return(
+        return (
           <div className="my-5">
             <label>Enter your adress</label>
             <textarea className="form-control" rows="10"></textarea>
           </div>
         )
       case 3:
-        return(
+        return (
           <div className="my-5">
             <h4>Click the submit button to confirm your order.</h4>
           </div>
@@ -64,7 +64,7 @@ function PaymentStepper() {
         })}
       </Stepper>
       {activeStep === steps.length ? (
-        <React.Fragment>
+        <>
           <Typography sx={{ mt: 2, mb: 1 }}>
             <div className="my-5">
               <h4>Your transactions are completed, you can fill in your card information and complete your shopping.</h4>
@@ -73,9 +73,9 @@ function PaymentStepper() {
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Box sx={{ flex: '1 1 auto' }} />
           </Box>
-        </React.Fragment>
+        </>
       ) : (
-        <React.Fragment>
+        <>
           <Typography sx={{ mt: 2, mb: 1 }}>{GetStep(activeStep + 1)}</Typography>
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Button
@@ -92,7 +92,7 @@ function PaymentStepper() {
               {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
             </Button>
           </Box>
-        </React.Fragment>
+        </>
       )}
     </Box>
   );

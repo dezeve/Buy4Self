@@ -6,16 +6,17 @@ import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 const OfferProductSlider = (props) => {
   const { data: products } = props;
   var settings = {
     dots: true,
-    speed: 800,
-    slidesToShow: 4,
+    speed: 1200,
+    slidesToShow: 5,
     autoplay: true,
     pauseOnHover: true,
     swipeToSlide: true,
-    arrows: true,
+    arrows: false,
     nextArrow: (
       <div >
         <FontAwesomeIcon
@@ -31,19 +32,46 @@ const OfferProductSlider = (props) => {
     mobileFirst: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 5,
           infinite: true,
         },
       },
     ],
   };
   return (
-    <Slider {...settings}>
+    <Slider className="gx-0" {...settings}>
       {products.map((product) => (
         <div className="col-12 px-3">
-          {" "}
           <ProductCard data={product} />
         </div>
       ))}
