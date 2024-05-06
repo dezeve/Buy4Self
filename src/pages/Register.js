@@ -5,21 +5,11 @@ const Register = () => {
   return (
     <Layout>
       <div className=" d-flex justify-content-center align-items-center mb-5">
-        <div className=" col-md-10 col-lg-10 col-xl-10">
-          {" "}
-          <div className="card">
+        <div className="col-12 col-md-10">
+          <div className="card mx-auto mt-4" style={{ maxWidth: "500px" }}>
             <div className="card-body row">
-              {" "}
-              <div className="col-sm d-flex justify-content-center align-items-center mb-5 md-mb-0">
-                <img
-                  src="https://hipokampus.com.tr/images/hizmetler/tr/fethiye-hipokampus-toplanti-odasi-is-birligi-yenilik-basari.webp"
-                  className="img-fluid rounded"
-                  alt="..."
-                />
-              </div>
               <div className="col-sm">
-                <h3 className="mb-5 text-center">Register</h3>
-
+                <h3 className="mb-4 mt-3 text-center">Register</h3>
                 <label className="form-label">Full Name</label>
                 <div className="form-outline mb-4">
                   <input type="text" className="form-control form-control-md" />

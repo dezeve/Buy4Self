@@ -6,10 +6,10 @@ const ForgotPassword = () => {
     <Layout>
       <div className=" d-flex justify-content-center align-items-center mt-5 mb-5">
         <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-          <div className="card shadow-2-strong">
+          <div className="card shadow-2-strong mx-auto" style={{ maxWidth: "500px" }}>
             <div className="card-body p-5 text-center">
               <h3 className="mb-5">Password reset</h3>
-              <label className="form-label">
+              <label className="form-label text-start w-100">
                 Enter your email for verification
               </label>
               <div className="form-outline mb-4">
