@@ -1,7 +1,6 @@
 import React from "react";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faFile } from "@fortawesome/free-solid-svg-icons";
-import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,11 +21,6 @@ const UserProfileSidebar = () => {
                             <li className="nav-item">
                                 <a href="/OrderHistory" className="nav-link align-middle px-0">
                                     <FontAwesomeIcon icon={faFile} />&nbsp;Order history
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="/Contact" className="nav-link align-middle px-0">
-                                <FontAwesomeIcon icon={faSquareEnvelope} />&nbsp;Contact us
                                 </a>
                             </li>
                             <li className="nav-item">
