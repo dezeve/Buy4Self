@@ -9,4 +9,5 @@ Buy4Self is an example of an e-commerce website frontend built using React.
  - Bootstrap
  - Font Awesome
  - MUI
-  
+ - Slick Carousel
+ - React Router
