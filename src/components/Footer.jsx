@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="mb-0 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top px-3 position-relative bg-primary text-white">
-      <p className="col-md-4 mb-0">© 2023 Buy4Self</p>
+      <p className="col-md-4 mb-0">© 2024 Buy4Self</p>
 
       <a
         href="/"

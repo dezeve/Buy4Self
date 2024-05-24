@@ -6,38 +6,29 @@ const Register = () => {
     <Layout>
       <div className=" d-flex justify-content-center align-items-center mb-5">
         <div className="col-12 col-md-10">
-          <div className="card mx-auto mt-4" style={{ maxWidth: "500px" }}>
-            <div className="card-body row">
+          <div className="card mx-auto mt-4 p-2" style={{ maxWidth: "400px" }}>
+            <div className="card-body">
               <div className="col-sm">
-                <h3 className="mb-4 mt-3 text-center">Register</h3>
-                <label className="form-label">Full Name</label>
-                <div className="form-outline mb-4">
-                  <input type="text" className="form-control form-control-md" />
+                <h3 className="mt-3 text-center fw-bold">Register</h3>
+                <div class="form-floating mb-2 mt-4">
+                  <input type="text" class="form-control" id="registerInputName" placeholder="Enter Your Name Here" />
+                  <label htmlFor="registerInputName">Name</label>
                 </div>
-                <label className="form-label">Email</label>
-                <div className="form-outline mb-4">
-                  <input
-                    type="email"
-                    className="form-control form-control-md"
-                  />
+                <div class="form-floating my-2">
+                  <input type="email" class="form-control" id="registerInputEmail" placeholder="Enter Your Email Here" />
+                  <label htmlFor="registerInputEmail">Email</label>
                 </div>
-                <label className="form-label">Phone</label>
-                <div className="form-outline mb-4">
-                  <input type="tel" className="form-control form-control-md" />
+                <div class="form-floating my-2">
+                  <input type="tel" class="form-control" id="registerInputPhone" placeholder="Enter Your Phone Number Here" />
+                  <label htmlFor="registerInputPhone">Phone Number</label>
                 </div>
-
-                <label className="form-label">Password</label>
-                <div className="form-outline mb-4">
-                  <input
-                    type="password"
-                    className="form-control form-control-md"
-                  />
+                <div class="form-floating mt-2 mb-4">
+                  <input type="password" class="form-control" id="registerInputPassword" placeholder="Enter Your Password Here" />
+                  <label htmlFor="registerInputPassword">Password</label>
                 </div>
-
-                <button className="btn btn-primary  col-12" type="submit">
+                <button className="btn btn-primary col-12 fw-bold" type="submit">
                   Sign Up
                 </button>
-
                 <div className="text-center mt-3">
                   Are you already registered? <br />
                   <a
@@ -48,7 +39,7 @@ const Register = () => {
                   </a>
                 </div>
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
