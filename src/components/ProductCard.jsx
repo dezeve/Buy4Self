@@ -2,7 +2,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useCart } from "../context/CartDropdownContext";
-import StarRating from "../components/StarRating";
+import StarRating from "./StarRating";
 
 const ProductCard = (props) => {
   const { data: product } = props;

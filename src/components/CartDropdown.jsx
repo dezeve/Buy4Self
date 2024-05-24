@@ -1,17 +1,16 @@
 import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useMemo } from "react";
+import React from "react";
 import { useCart } from "../context/CartDropdownContext";
-import QuantitySelector from "../components/QuantitySelector";
+import QuantitySelector from "./QuantitySelector";
 
 const CartDropdown = () => {
   const { isCartOpen, toggleCart } = useCart();
   return (
     <div>
       <a
-        className={`nav-link text-white dropdown-toggle ${
-          isCartOpen ? "show" : ""
-        } `}
+        className={`nav-link text-white dropdown-toggle ${isCartOpen ? "show" : ""
+          } `}
         role="button"
         aria-expanded="true"
         onClick={toggleCart}
@@ -29,15 +28,15 @@ const CartDropdown = () => {
         </div>
         <div className="row">
           <a className="dropdown-item text-start col">Product 1 100 TL</a>
-           <div className="col text-end">
-              <QuantitySelector />
-           </div>
+          <div className="col text-end">
+            <QuantitySelector />
+          </div>
         </div>
         <div className="row">
           <a className="dropdown-item text-start col">Product 1 100 TL</a>
-           <div className="col text-end">
-              <QuantitySelector />
-           </div>
+          <div className="col text-end">
+            <QuantitySelector />
+          </div>
         </div>
         <hr className="dropdown-divider" />
 

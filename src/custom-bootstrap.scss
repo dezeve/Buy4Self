@@ -1,94 +1,106 @@
-@import "~bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 $primary-color: #273c75;
 $secondary-color: #2f3640;
 $third-color: #e84118;
 $teal-color: #44bd32;
-$gray-color:#dcdde1;
+$gray-color: #dcdde1;
 
 $success-color: #16a085;
 $danger-color: #e74c3c;
 
-.text-third{
+.text-third {
   color: $third-color !important;
 }
-.text-teal{
+
+.text-teal {
   color: $teal-color !important;
 }
-.text-bg-light{
-    background-color: $gray-color !important;
-    color:black !important;
+
+.text-bg-light {
+  background-color: $gray-color !important;
+  color: black !important;
 }
 
+.bg-secondary {
+  background-color: $secondary-color !important;
+}
 
-.bg-secondary{
-    background-color: $secondary-color !important;
+.bg-gray {
+  background-color: $gray-color !important;
 }
-.bg-gray{
-    background-color: $gray-color !important;
-}
+
 .btn-success {
   background-color: $success-color;
   color: white;
-  border:0.2px solid gray;
+  border: 0.2px solid gray;
 }
+
 .btn-success:hover {
   background-color: $success-color;
   opacity: 0.9;
-  border:0.2px solid gray;
+  border: 0.2px solid gray;
 }
+
 .btn-primary {
   background-color: $primary-color;
   color: white;
-  border:0.2px solid gray;
+  border: 0.2px solid gray;
 }
+
 .btn-primary:hover {
   background-color: $primary-color;
   opacity: 0.9;
-  border:0.2px solid gray;
+  border: 0.2px solid gray;
 }
+
 .btn-secondary {
   background-color: $secondary-color;
   color: white;
-  border:0.2px solid gray;
+  border: 0.2px solid gray;
 }
 
 .btn-teal {
   background-color: $teal-color;
   color: white;
-  border:0.2px solid gray;
+  border: 0.2px solid gray;
 }
+
 .btn-teal:hover {
   background-color: $teal-color;
   opacity: 0.9;
   color: white;
 }
+
 .btn-teal:active {
   background-color: $success-color !important;
   color: white !important;
   border: none;
 }
+
 .bg-primary {
   background-color: $primary-color !important;
 }
+
 .alert-success {
   background-color: $success-color;
   color: white;
 }
+
 .alert-danger {
   background-color: $danger-color;
   color: white;
 }
 
-
-.activeCategory{
-   color:$teal-color !important;
+.activeCategory {
+  color: $teal-color !important;
   font-style: italic;
-   font-weight:600 !important;
-    padding-left:3px !important;
+  font-weight: 600 !important;
+  padding-left: 3px !important;
 }
 
 .cartDropdownInNavbar {
   width: 300px;
 
-//    margin-left: 100px !important;
+  //    margin-left: 100px !important;
 }
