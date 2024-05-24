@@ -6,21 +6,19 @@ const Login = () => {
     <Layout>
       <div className=" d-flex justify-content-center align-items-center">
         <div className=" col-md-10 col-lg-10 col-xl-10">
-          <div className="card shadow-2-strong mt-4 mx-auto" style={{ maxWidth: "500px" }}>
-            <div className="card-body p-5">
+          <div className="card shadow-2-strong mt-4 mx-auto" style={{ maxWidth: "400px" }}>
+            <div className="card-body">
               <div className="col-sm">
-                <h3 className="mb-4 text-center">Login</h3>
-                <label className="form-label">Email</label>
-                <div className="form-outline mb-4">
-                  <input type="email" className="form-control form-control-md" />
+                <h3 className="mt-4 text-center">Login</h3>
+                <div class="form-floating mb-2 mt-4">
+                  <input type="text" class="form-control" id="registerInputName" placeholder="Enter Your Name Here" />
+                  <label htmlFor="registerInputName">Name</label>
                 </div>
-
-                <label className="form-label">Password</label>
-                <div className="form-outline mb-4">
-                  <input type="password" className="form-control form-control-md" />
+                <div class="form-floating mt-2 mb-4">
+                  <input type="password" class="form-control" id="signInInputPassword" placeholder="Enter Your Password Here" />
+                  <label htmlFor="signInInputPassword">Password</label>
                 </div>
-
-                <div className="row mb-4">
+                <div className="row mb-0">
                   <div className="col d-flex ">
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" />
@@ -39,9 +37,8 @@ const Login = () => {
                     </a>
                   </div>
                 </div>
-                <br />
-                <div >
-                  <a href="/Settings" className="text-decoration-none text-white btn btn-primary btn-md btn-block col-12" >
+                <div>
+                  <a href="/Settings" className="text-decoration-none text-white btn btn-primary btn-md btn-block col-12 my-3">
                     Sign in
                   </a>
                 </div>

@@ -4,7 +4,9 @@ import ProductCard from "../components/ProductCard";
 import Sidebar from "../components/Sidebar";
 import Layout from "../layout/Layout";
 import productsData from "../dummyData/products.json";
+
 const Products = () => {
+
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const activeCategoryId = searchParams.get("category");
@@ -12,20 +14,17 @@ const Products = () => {
   return (
     <Layout>
       <div className="col-md-4 col-xl-3 col-xs-12 ">
-        {" "}
         <Sidebar active={activeCategoryId} />
       </div>
       <div className="col-md-8 col-xl-9 col-xs-12 ">
         <div className="col-12 text-center">
           <label className="fs-4">
-            The products that has  {activeCategoryId} category ID is listing.
+            The products that has {activeCategoryId} category ID is listing.
           </label>
         </div>
         <div className="row">
-          {" "}
           {productsData.map((product) => (
             <div className="col-md-3">
-              {" "}
               <ProductCard data={product} />
             </div>
           ))}

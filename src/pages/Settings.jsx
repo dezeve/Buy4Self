@@ -17,18 +17,15 @@ const Settings = () => {
             <div className="form-body my-4">
               <p className="h5">
                 <b>
-                  {" "}
                   <FontAwesomeIcon icon={faUser} />
                   &nbsp;Change your profile details
                 </b>
               </p>
-
               <input
                 className="form-control mb-2"
                 type="text"
                 placeholder="Enter your username here"
               />
-
               <p className="h5 fw-bold my-4"><FontAwesomeIcon icon={faKey} />
                 &nbsp;Change your password
               </p>
