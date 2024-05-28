@@ -38,7 +38,6 @@ const Cart = () => {
                     />
                     <div className="ml-3 d-inline-block align-middle p-3">
                       <h5 className="mb-0">
-                        {" "}
                         <a
                           href="#"
                           className="text-dark d-inline-block align-middle text-decoration-none"
@@ -57,7 +56,6 @@ const Cart = () => {
                   <strong>79.00 TL</strong>
                 </td>
                 <td className="border-0 align-middle">
-                  {" "}
                   <QuantitySelector />
                 </td>
                 <td className="border-0 align-middle">
