@@ -11,6 +11,7 @@ const ProductCard = (props) => {
   const addToCartHandler = () => {
     putCart();
   };
+
   return (
     <div className="card h-100 mt-3">
       <a href={`product/${product.id}`} target="_blank" rel="noopener noreferrer">

@@ -8,14 +8,16 @@ const ForgotPassword = () => {
         <div className="col-12 col-md-8 col-lg-6 col-xl-5">
           <div className="card shadow-2-strong mx-auto" style={{ maxWidth: "500px" }}>
             <div className="card-body p-5 text-center">
-              <h3 className="mb-5">Password reset</h3>
-              <label className="form-label text-start w-100">
-                Enter your email for verification
-              </label>
-              <div className="form-outline mb-4">
-                <input type="email" className="form-control form-control-md" />
+              <h3 className="mb-5 fw-bold">Password Recovery</h3>
+              <div class="form-floating mt-2 mb-4">
+                <input type="email" class="form-control" id="recoveryEmail" placeholder="Enter Your Email to Verify" />
+                <label htmlFor="recoveryEmail">Email</label>
               </div>
-              <div className="btn btn-primary btn-md col-12">Recover password</div>
+              <a href="/sign-in">
+                <div className="btn btn-primary btn-md fw-bold col-12">
+                  Recover password
+                </div>
+              </a>
             </div>
           </div>
         </div>

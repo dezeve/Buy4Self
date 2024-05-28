@@ -1,10 +1,10 @@
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
-import Login from "../pages/Login";
+import SignIn from "../pages/SignIn";
 import Offers from "../pages/Offers";
 import Product from "../pages/Product";
 import Products from "../pages/Products";
-import Register from "../pages/Register";
+import SignUp from "../pages/SignUp";
 import ForgotPassword from "../pages/ForgotPassword";
 import Payment from "../pages/Payment";
 import Cart from "../pages/Cart";
@@ -17,7 +17,6 @@ const routes = [
     path: "/",
     component: <Home />,
   },
-
   {
     path: "/products",
     component: <Products />,
@@ -35,12 +34,12 @@ const routes = [
     component: <Contact />,
   },
   {
-    path: "/login",
-    component: <Login />,
+    path: "/sign-in",
+    component: <SignIn />,
   },
   {
-    path: "/register",
-    component: <Register />,
+    path: "/sign-up",
+    component: <SignUp />,
   },
   {
     path: "/forgot-password",

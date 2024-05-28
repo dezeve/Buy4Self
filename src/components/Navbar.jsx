@@ -70,17 +70,17 @@ const Navbar = (props) => {
             <ul className="navbar-nav ml-auto">
               <li className="d-none d-lg-block">
                 <div className="nav-item dropdown ">
-                  <CartDropdown />{" "}
+                  <CartDropdown />
                 </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/login">
-                  Login
+                <a className="nav-link text-white" href="/sign-in">
+                  Sign In
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="/register">
-                  Register
+                <a className="nav-link text-white" href="/sign-up">
+                  Sign Up
                 </a>
               </li>
             </ul>
