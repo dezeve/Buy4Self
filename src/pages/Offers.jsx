@@ -9,7 +9,7 @@ const Offers = () => {
       <div className="p-5 bg-primary bg-gradient text-white rounded">
         <div className="row">
           <div className="col-sm">
-            <h1 className="mb-4">Flash Sales</h1>
+            <h1 className="mb-4 fw-bold">Flash Sales</h1>
             Integer iaculis sapien quis velit ultricies blandit. Nullam
             pellentesque porttitor turpis eget sodales. Vivamus eros ligula,
             convallis at aliquam et, finibus at mi. Phasellus accumsan semper

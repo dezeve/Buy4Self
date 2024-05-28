@@ -15,9 +15,9 @@ const ProductCard = (props) => {
   return (
     <div className="card h-100 mt-3">
       <a href={`product/${product.id}`} target="_blank" rel="noopener noreferrer">
-        <img src={product.img} className="card-img-top img-fluid" alt="..." />
+        <img src={product.img} className="card-img-top img-fluid" alt="Product Card Image" />
       </a>
-      <div className="card-body ">
+      <div className="card-body">
         <h5 className="card-title">
           <a
             href={`product/${product.id}`}
@@ -35,12 +35,12 @@ const ProductCard = (props) => {
           </span>
         </a>
         <div className="productPrice mb-1 text-center text-third fs-5 fw-bold">
-          {product.price} TL
+          {product.price} $
         </div>
 
         <div className="pt-2">
           <div
-            className="btn btn-success col-12"
+            className="btn btn-success col-12 fw-bold"
             onClick={() => addToCartHandler(product.id)}
           >
             <FontAwesomeIcon icon={faShoppingCart} /> Add to Cart

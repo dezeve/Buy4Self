@@ -24,16 +24,20 @@ const CartDropdown = () => {
         data-bs-popper="static"
       >
         <div className="d-flex justify-content-center">
-          <label className="fw-bold">Cart Details</label>
+          <label className="fw-bold h5 mt-2 mb-3">Cart Details</label>
         </div>
         <div className="row">
-          <a className="dropdown-item text-start col">Product 1 100 TL</a>
+          <a className="dropdown-item text-start col">Product 1
+            <span className="ms-2 fw-bold" style={{color: "#e84118"}}>145 $</span>
+          </a>
           <div className="col text-end">
             <QuantitySelector />
           </div>
         </div>
         <div className="row">
-          <a className="dropdown-item text-start col">Product 1 100 TL</a>
+          <a className="dropdown-item text-start col">Product 2
+            <span className="ms-2 fw-bold" style={{color: "#e84118"}}>200 $</span>
+          </a>
           <div className="col text-end">
             <QuantitySelector />
           </div>
@@ -43,7 +47,7 @@ const CartDropdown = () => {
         <div>
           <a
             href="/Cart"
-            className="text-white text-decoration-none btn btn-success col-12 fit-contain"
+            className="text-white fw-bold text-decoration-none btn btn-success col-12 fit-contain"
           >
             Go To Cart
           </a>

@@ -63,8 +63,9 @@ const Navbar = (props) => {
                 ref={inputRef}
               />
               <button onClick={() => { takeSearchInput(); props.changeWord(searchInput) }}
-                className="btn btn-outline-light col-4" type="submit">
-                <FontAwesomeIcon icon={faMagnifyingGlass} /> Search
+                className="btn btn-outline-light col-4 fw-bold" type="submit">
+                <FontAwesomeIcon className="me-2" icon={faMagnifyingGlass} />
+                Search
               </button>
             </div>
             <ul className="navbar-nav ml-auto">

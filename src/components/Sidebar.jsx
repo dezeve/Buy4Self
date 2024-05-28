@@ -1,9 +1,13 @@
 import {
-  faArrowRight,
-  faShoppingCart,
+  faBarsStaggered,
+  faBasketball,
+  faBolt,
+  faBook,
+  faMusic,
+  faTshirt
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from "axios";
+// import axios from "axios";
 import React, { useEffect } from "react";
 import categoriesData from "../dummyData/categories.json";
 
@@ -18,43 +22,67 @@ const Sidebar = (props) => {
     //for axios get to products endpoint with category filter
   };*/
 
+  function getCategoryIcon(category) {
+    category = category.replace(/\s/g, '')
+    switch (category) {
+      case "Electronics":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faBolt} />
+      case "Clothing":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faTshirt} />
+      case "SportsEquipment":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faBasketball} />
+      case "Books":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faBook} />
+      case "Music":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faMusic} />
+      default:
+        break;
+    }
+  }
+
   return (
     <div>
-      <div className="px-sm-2 px-0 mr-0 rounded mt-3 bg-secondary">
-        <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 pb-4 text-white ">
-          <h4 className="mt-4 mb-3">Categories</h4>
+      <div className="px-2 mr-0 rounded mt-3 bg-secondary">
+        <div className="d-flex flex-column align-items-start px-3 pt-2 pb-4 text-white ">
+          <h4 className="mt-4 mb-3 fw-bold"><FontAwesomeIcon icon={faBarsStaggered} className="me-2" />
+            Categories
+          </h4>
           <ul
-            className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+            className="nav nav-pills flex-column mb-sm-auto mb-2 align-items-start"
             id="menu"
           >
             {categoriesData.map((category) => (
-              <li key={category.id}>
+              <li key={category.id} className="mt-2">
                 <a
                   href={`products?category=${category.id}`}
                   className={
                     category.id == activeCategoryId
-                      ? "nav-link px-0 align-middle text-white activeCategory"
-                      : "nav-link px-0 align-middle text-white"
+                      ? "nav-link ps-2 pe-0 align-middle text-white activeCategory"
+                      : "nav-link ps-2 pe-0 align-middle text-white"
                   }
                 >
-                  <FontAwesomeIcon icon={faArrowRight} />
-                  <span className="ms-1 "> {category.name}</span>
+                  {getCategoryIcon(category.name)}
+                  <span className="ms-1 fw-bold h6">
+                    {category.name}
+                  </span>
                 </a>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className="col-12 mt-3 btn btn-lg text-white" style={{ background: "rgb(34,193,195)" }}>
-        <a href="/Offers">
+      <a href="/Offers">
+        <button className="col-12 mt-3 btn btn-lg text-light fw-bold"
+          style={{ background: "#157D7E" }}>
           Special Offers
-        </a>
-      </div>
-      <div className="col-12 btn btn-danger btn-lg mt-3">
-        <a href="/Offers">
+        </button>
+      </a>
+      <a href="/Offers">
+        <button className="col-12 btn fw-bold text-light btn-lg mt-3"
+          style={{ background: "#B30000" }}>
           Bargain Sale
-        </a>
-      </div>
+        </button>
+      </a>
     </div>
   );
 };

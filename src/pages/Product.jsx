@@ -10,7 +10,7 @@ import Layout from "../layout/Layout";
 import StarRating from "../components/StarRating";
 
 const Product = () => {
-  const [quantity, setQuantity] = useState(1);
+  const [ quantity, setQuantity ] = useState(1);
   const { toggleCart } = useCart();
 
   const addToCartHandler = (productId) => {
@@ -83,7 +83,7 @@ const Product = () => {
                   </div>
                 </div>
                 <div
-                  className="btn btn-success col-6 mt-3"
+                  className="btn btn-success col-6 mt-3 fw-bold"
                   onClick={() => addToCartHandler()}
                 >
                   <FontAwesomeIcon icon={faShoppingCart} /> Add To Cart
