@@ -4,7 +4,7 @@ import Layout from "../layout/Layout";
 const SignIn = () => {
   return (
     <Layout>
-      <div className=" d-flex justify-content-center align-items-center">
+      <div className="d-flex justify-content-center align-items-center">
         <div className="col-12 col-md-10">
           <div className="card shadow-2-strong mt-4 mx-auto" style={{ maxWidth: "400px" }}>
             <div className="card-body">
