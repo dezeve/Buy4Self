@@ -3,7 +3,12 @@ import {
   faBasketball,
   faBolt,
   faBook,
+  faBriefcase,
+  faCat,
+  faCouch,
+  faGamepad,
   faMusic,
+  faSeedling,
   faTshirt
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,6 +40,16 @@ const Sidebar = (props) => {
         return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faBook} />
       case "Music":
         return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faMusic} />
+      case "Furniture":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faCouch} />
+      case "PetProducts":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faCat} />
+      case "Games":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faGamepad} />
+      case "OfficeSupplies":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faBriefcase} />
+      case "Groceries":
+        return <FontAwesomeIcon width={20} size="lg" className="me-1" icon={faSeedling} />
       default:
         break;
     }
@@ -57,8 +72,8 @@ const Sidebar = (props) => {
                   href={`products?category=${category.id}`}
                   className={
                     category.id == activeCategoryId
-                      ? "nav-link ps-2 pe-0 align-middle text-white activeCategory"
-                      : "nav-link ps-2 pe-0 align-middle text-white"
+                      ? "nav-link ps-2 pe-0 align-middle text-white active-category"
+                      : "nav-link ps-2 pe-0 align-middle text-white not-active-category"
                   }
                 >
                   {getCategoryIcon(category.name)}

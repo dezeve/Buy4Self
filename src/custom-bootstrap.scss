@@ -92,11 +92,12 @@ $danger-color: #e74c3c;
   color: white;
 }
 
-.activeCategory {
-  color: $teal-color !important;
-  font-style: italic;
-  font-weight: 600 !important;
-  padding-left: 3px !important;
+.active-category {
+  color: #B3E7FF !important;
+}
+
+.not-active-category:hover {
+  color: #CCEFFF !important;
 }
 
 .cartDropdownInNavbar {

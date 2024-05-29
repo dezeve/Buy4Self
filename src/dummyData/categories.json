@@ -18,5 +18,25 @@
   {
     "id": 5,
     "name": "Music"
+  },
+  {
+    "id": 6,
+    "name": "Furniture"
+  },
+  {
+    "id": 7,
+    "name": "Pet Products"
+  },
+  {
+    "id": 8,
+    "name": "Games"
+  },
+  {
+    "id": 9,
+    "name": "Office Supplies"
+  },
+  {
+    "id": 10,
+    "name": "Groceries"
   }
 ]
