@@ -34,17 +34,16 @@ const ProductCard = (props) => {
             {product.category.name}
           </span>
         </a>
-        <div className="productPrice mb-1 text-center text-third fs-5 fw-bold">
+        <div className="productPrice text-center text-third fs-5 fw-bold">
           {product.price} $
         </div>
-
-        <div className="pt-2">
-          <div
-            className="btn btn-success col-12 fw-bold"
-            onClick={() => addToCartHandler(product.id)}
-          >
-            <FontAwesomeIcon icon={faShoppingCart} /> Add to Cart
-          </div>
+      </div>
+      <div className="position-relative px-3" style={{bottom: "20px"}}>
+        <div
+          className="btn btn-success col-12 fw-bold"
+          onClick={() => addToCartHandler(product.id)}
+        >
+          <FontAwesomeIcon icon={faShoppingCart} /> Add to Cart
         </div>
       </div>
     </div>
