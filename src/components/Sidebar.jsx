@@ -17,7 +17,7 @@ import React, { useEffect } from "react";
 import categoriesData from "../dummyData/categories.json";
 
 const Sidebar = (props) => {
-  const { active: activeCategoryId } = props;
+  const { active: activeCategoryName } = props;
 
   /* useEffect(() => {
     fetchCategories();
@@ -59,7 +59,8 @@ const Sidebar = (props) => {
     <div>
       <div className="px-2 mr-0 rounded mt-3 bg-secondary">
         <div className="d-flex flex-column align-items-start px-3 pt-2 pb-4 text-white ">
-          <h4 className="mt-4 mb-3 fw-bold"><FontAwesomeIcon icon={faBarsStaggered} className="me-2" />
+          <h4 className="mt-4 mb-3 fw-bold">
+            <FontAwesomeIcon icon={faBarsStaggered} className="me-2" />
             Categories
           </h4>
           <ul
@@ -69,9 +70,9 @@ const Sidebar = (props) => {
             {categoriesData.map((category) => (
               <li key={category.id} className="mt-2">
                 <a
-                  href={`products?category=${category.id}`}
+                  href={`products?category=${category.name}`}
                   className={
-                    category.id == activeCategoryId
+                    category.name == activeCategoryName
                       ? "nav-link ps-2 pe-0 align-middle text-white active-category"
                       : "nav-link ps-2 pe-0 align-middle text-white not-active-category"
                   }

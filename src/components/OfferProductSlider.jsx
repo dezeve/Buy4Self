@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import ProductCard from "./ProductCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+/* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"; */
 
 const OfferProductSlider = (props) => {
   const { data: products } = props;
@@ -17,7 +17,7 @@ const OfferProductSlider = (props) => {
     pauseOnHover: true,
     swipeToSlide: true,
     arrows: false,
-    nextArrow: (
+    /* nextArrow: (
       <div >
         <FontAwesomeIcon
           icon={faArrowRight}
@@ -27,7 +27,7 @@ const OfferProductSlider = (props) => {
           }}
         />
       </div>
-    ),
+    ), */
 
     mobileFirst: true,
     responsive: [
