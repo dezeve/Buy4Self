@@ -458,5 +458,925 @@
                 "comment": "Great for chilly days."
             }
         ]
+    },
+    {
+        "id": 21,
+        "name": "Sci-Fi Adventure",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 14.99,
+        "stock": 8,
+        "category": {
+            "id": 2,
+            "name": "Books"
+        },
+        "reviews": [
+            {
+                "id": 211,
+                "rating": 4.2,
+                "comment": "Exciting read, kept me on the edge of my seat!"
+            },
+            {
+                "id": 212,
+                "rating": 4.0,
+                "comment": "Imaginative world-building, loved every page."
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Historical Fiction",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 17.99,
+        "stock": 12,
+        "category": {
+            "id": 2,
+            "name": "Books"
+        },
+        "reviews": [
+            {
+                "id": 221,
+                "rating": 4.5,
+                "comment": "Transported me to another era, beautifully written."
+            },
+            {
+                "id": 222,
+                "rating": 4.3,
+                "comment": "Rich in detail, a captivating historical journey."
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Thriller Mystery",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 12.99,
+        "stock": 6,
+        "category": {
+            "id": 2,
+            "name": "Books"
+        },
+        "reviews": [
+            {
+                "id": 231,
+                "rating": 4.7,
+                "comment": "Kept me guessing until the very end, a real page-turner!"
+            },
+            {
+                "id": 232,
+                "rating": 4.8,
+                "comment": "Twists and turns galore, couldn't stop reading."
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Fantasy Realm",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 21.99,
+        "stock": 9,
+        "category": {
+            "id": 2,
+            "name": "Books"
+        },
+        "reviews": [
+            {
+                "id": 241,
+                "rating": 4.6,
+                "comment": "Magical and enchanting, a fantasy lover's dream."
+            },
+            {
+                "id": 242,
+                "rating": 4.9,
+                "comment": "Epic storytelling, a journey into a wondrous world."
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Self-Help Guide",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 16.99,
+        "stock": 7,
+        "category": {
+            "id": 2,
+            "name": "Books"
+        },
+        "reviews": [
+            {
+                "id": 251,
+                "rating": 4.3,
+                "comment": "Empowering and insightful, a must-read for personal growth."
+            },
+            {
+                "id": 252,
+                "rating": 4.1,
+                "comment": "Life-changing advice, highly recommend for self-improvement."
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Pro Tennis Racket",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 89.99,
+        "stock": 5,
+        "category": {
+            "id": 3,
+            "name": "Sports Equipment"
+        },
+        "reviews": [
+            {
+                "id": 261,
+                "rating": 4.8,
+                "comment": "Excellent control and power, a top-notch racket."
+            },
+            {
+                "id": 262,
+                "rating": 4.5,
+                "comment": "Improved my game significantly, highly recommended."
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Durable Soccer Ball",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 24.99,
+        "stock": 10,
+        "category": {
+            "id": 3,
+            "name": "Sports Equipment"
+        },
+        "reviews": [
+            {
+                "id": 271,
+                "rating": 4.4,
+                "comment": "Great quality ball, holds up well on the field."
+            },
+            {
+                "id": 272,
+                "rating": 4.2,
+                "comment": "Perfect for practice sessions, very durable."
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Adjustable Dumbbell Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 129.99,
+        "stock": 3,
+        "category": {
+            "id": 3,
+            "name": "Sports Equipment"
+        },
+        "reviews": [
+            {
+                "id": 281,
+                "rating": 4.7,
+                "comment": "Versatile and easy to use, perfect for home workouts."
+            },
+            {
+                "id": 282,
+                "rating": 4.6,
+                "comment": "Highly recommend for strength training, great value."
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Running Shoes",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 79.99,
+        "stock": 7,
+        "category": {
+            "id": 3,
+            "name": "Sports Equipment"
+        },
+        "reviews": [
+            {
+                "id": 291,
+                "rating": 4.9,
+                "comment": "Comfortable and supportive, perfect for long runs."
+            },
+            {
+                "id": 292,
+                "rating": 4.8,
+                "comment": "Great quality shoes, improved my performance."
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Cycling Helmet",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 39.99,
+        "stock": 6,
+        "category": {
+            "id": 3,
+            "name": "Sports Equipment"
+        },
+        "reviews": [
+            {
+                "id": 301,
+                "rating": 4.6,
+                "comment": "Safety first! Comfortable fit and good ventilation."
+            },
+            {
+                "id": 302,
+                "rating": 4.4,
+                "comment": "Stylish design, provides great protection on rides."
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Electric Guitar",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 299.99,
+        "stock": 4,
+        "category": {
+            "id": 4,
+            "name": "Music"
+        },
+        "reviews": [
+            {
+                "id": 311,
+                "rating": 4.7,
+                "comment": "Amazing sound quality, perfect for rock enthusiasts."
+            },
+            {
+                "id": 312,
+                "rating": 4.5,
+                "comment": "Versatile instrument, great for various music styles."
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Digital Piano",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 499.99,
+        "stock": 3,
+        "category": {
+            "id": 4,
+            "name": "Music"
+        },
+        "reviews": [
+            {
+                "id": 321,
+                "rating": 4.9,
+                "comment": "Beautiful sound, feels like playing a grand piano."
+            },
+            {
+                "id": 322,
+                "rating": 4.8,
+                "comment": "Responsive keys, a joy to play on."
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Acoustic Guitar",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 199.99,
+        "stock": 6,
+        "category": {
+            "id": 4,
+            "name": "Music"
+        },
+        "reviews": [
+            {
+                "id": 331,
+                "rating": 4.6,
+                "comment": "Warm tone, perfect for intimate performances."
+            },
+            {
+                "id": 332,
+                "rating": 4.4,
+                "comment": "Great for beginners and experienced players alike."
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Drum Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 399.99,
+        "stock": 2,
+        "category": {
+            "id": 4,
+            "name": "Music"
+        },
+        "reviews": [
+            {
+                "id": 341,
+                "rating": 4.8,
+                "comment": "High-quality drums, perfect for jam sessions."
+            },
+            {
+                "id": 342,
+                "rating": 4.7,
+                "comment": "Solid build, sounds fantastic."
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Microphone Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 79.99,
+        "stock": 5,
+        "category": {
+            "id": 4,
+            "name": "Music"
+        },
+        "reviews": [
+            {
+                "id": 351,
+                "rating": 4.5,
+                "comment": "Clear sound quality, great for vocals and recordings."
+            },
+            {
+                "id": 352,
+                "rating": 4.3,
+                "comment": "Durable build, excellent value for the price."
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Modern Sofa",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 599.99,
+        "stock": 3,
+        "category": {
+            "id": 5,
+            "name": "Furniture"
+        },
+        "reviews": [
+            {
+                "id": 361,
+                "rating": 4.8,
+                "comment": "Sleek design, very comfortable and stylish."
+            },
+            {
+                "id": 362,
+                "rating": 4.6,
+                "comment": "Great addition to my living room, love the quality."
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Wooden Dining Table",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 349.99,
+        "stock": 5,
+        "category": {
+            "id": 5,
+            "name": "Furniture"
+        },
+        "reviews": [
+            {
+                "id": 371,
+                "rating": 4.7,
+                "comment": "Beautiful craftsmanship, sturdy and elegant."
+            },
+            {
+                "id": 372,
+                "rating": 4.5,
+                "comment": "Perfect size for family dinners, very pleased with the purchase."
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "name": "Bedroom Dresser",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 279.99,
+        "stock": 4,
+        "category": {
+            "id": 5,
+            "name": "Furniture"
+        },
+        "reviews": [
+            {
+                "id": 381,
+                "rating": 4.6,
+                "comment": "Spacious drawers, looks great in my bedroom."
+            },
+            {
+                "id": 382,
+                "rating": 4.4,
+                "comment": "High-quality finish, exceeded my expectations."
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "name": "Office Desk",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 199.99,
+        "stock": 6,
+        "category": {
+            "id": 5,
+            "name": "Furniture"
+        },
+        "reviews": [
+            {
+                "id": 391,
+                "rating": 4.5,
+                "comment": "Sturdy and functional, perfect for my home office."
+            },
+            {
+                "id": 392,
+                "rating": 4.3,
+                "comment": "Easy to assemble, great value for the price."
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Bookshelf",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 149.99,
+        "stock": 8,
+        "category": {
+            "id": 5,
+            "name": "Furniture"
+        },
+        "reviews": [
+            {
+                "id": 401,
+                "rating": 4.4,
+                "comment": "Sleek design, holds plenty of books and decor."
+            },
+            {
+                "id": 402,
+                "rating": 4.2,
+                "comment": "Easy to assemble, looks great in my living room."
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "name": "Cozy Cat Bed",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 29.99,
+        "stock": 10,
+        "category": {
+            "id": 6,
+            "name": "Pet Products"
+        },
+        "reviews": [
+            {
+                "id": 411,
+                "rating": 4.5,
+                "comment": "My cat loves it, very soft and comfortable."
+            },
+            {
+                "id": 412,
+                "rating": 4.3,
+                "comment": "Great quality, perfect for nap time."
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "name": "Dog Chew Toys Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 19.99,
+        "stock": 8,
+        "category": {
+            "id": 6,
+            "name": "Pet Products"
+        },
+        "reviews": [
+            {
+                "id": 421,
+                "rating": 4.2,
+                "comment": "Keeps my dog entertained for hours, durable toys."
+            },
+            {
+                "id": 422,
+                "rating": 4.0,
+                "comment": "Good variety of toys, great for teething puppies."
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "name": "Bird Cage",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 49.99,
+        "stock": 5,
+        "category": {
+            "id": 6,
+            "name": "Pet Products"
+        },
+        "reviews": [
+            {
+                "id": 431,
+                "rating": 4.6,
+                "comment": "Spacious cage, perfect for my bird."
+            },
+            {
+                "id": 432,
+                "rating": 4.4,
+                "comment": "Sturdy construction, easy to clean."
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "name": "Fish Tank Kit",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 39.99,
+        "stock": 6,
+        "category": {
+            "id": 6,
+            "name": "Pet Products"
+        },
+        "reviews": [
+            {
+                "id": 441,
+                "rating": 4.7,
+                "comment": "Great starter kit for fish enthusiasts."
+            },
+            {
+                "id": 442,
+                "rating": 4.5,
+                "comment": "Easy to set up, my fish love their new home."
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "name": "Small Animal Playpen",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 34.99,
+        "stock": 7,
+        "category": {
+            "id": 6,
+            "name": "Pet Products"
+        },
+        "reviews": [
+            {
+                "id": 451,
+                "rating": 4.4,
+                "comment": "Perfect for my rabbits, sturdy and easy to assemble."
+            },
+            {
+                "id": 452,
+                "rating": 4.2,
+                "comment": "Great for small pets, provides a safe play area."
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "name": "Board Game Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 24.99,
+        "stock": 10,
+        "category": {
+            "id": 7,
+            "name": "Games"
+        },
+        "reviews": [
+            {
+                "id": 461,
+                "rating": 4.5,
+                "comment": "Fun for the whole family, great variety of games."
+            },
+            {
+                "id": 462,
+                "rating": 4.3,
+                "comment": "Quality components, hours of entertainment."
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "name": "Video Game Console",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 299.99,
+        "stock": 5,
+        "category": {
+            "id": 7,
+            "name": "Games"
+        },
+        "reviews": [
+            {
+                "id": 471,
+                "rating": 4.8,
+                "comment": "Amazing graphics and gameplay, a must-have console."
+            },
+            {
+                "id": 472,
+                "rating": 4.6,
+                "comment": "Hours of entertainment, love the game selection."
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "name": "Puzzle Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 14.99,
+        "stock": 8,
+        "category": {
+            "id": 7,
+            "name": "Games"
+        },
+        "reviews": [
+            {
+                "id": 481,
+                "rating": 4.2,
+                "comment": "Challenging puzzles, great for mental exercise."
+            },
+            {
+                "id": 482,
+                "rating": 4.0,
+                "comment": "Relaxing activity, beautiful designs."
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "name": "Card Game Deck",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 9.99,
+        "stock": 12,
+        "category": {
+            "id": 7,
+            "name": "Games"
+        },
+        "reviews": [
+            {
+                "id": 491,
+                "rating": 4.4,
+                "comment": "Fun card games, high-quality cards."
+            },
+            {
+                "id": 492,
+                "rating": 4.2,
+                "comment": "Great for game nights, easy to shuffle and deal."
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "name": "Chess Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 19.99,
+        "stock": 6,
+        "category": {
+            "id": 7,
+            "name": "Games"
+        },
+        "reviews": [
+            {
+                "id": 501,
+                "rating": 4.6,
+                "comment": "Classic game, elegant set design."
+            },
+            {
+                "id": 502,
+                "rating": 4.4,
+                "comment": "Great for strategic play, high-quality pieces."
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "name": "Desk Organizer",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 19.99,
+        "stock": 10,
+        "category": {
+            "id": 8,
+            "name": "Office Supplies"
+        },
+        "reviews": [
+            {
+                "id": 511,
+                "rating": 4.5,
+                "comment": "Keeps my desk tidy, great for organizing supplies."
+            },
+            {
+                "id": 512,
+                "rating": 4.3,
+                "comment": "Sturdy construction, fits all my essentials."
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "name": "Wireless Keyboard and Mouse Set",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 39.99,
+        "stock": 5,
+        "category": {
+            "id": 8,
+            "name": "Office Supplies"
+        },
+        "reviews": [
+            {
+                "id": 521,
+                "rating": 4.8,
+                "comment": "Responsive and comfortable to use, great value."
+            },
+            {
+                "id": 522,
+                "rating": 4.6,
+                "comment": "No more tangled wires, love the wireless setup."
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "name": "Desk Lamp",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 29.99,
+        "stock": 8,
+        "category": {
+            "id": 8,
+            "name": "Office Supplies"
+        },
+        "reviews": [
+            {
+                "id": 531,
+                "rating": 4.2,
+                "comment": "Adjustable brightness, perfect for late-night work."
+            },
+            {
+                "id": 532,
+                "rating": 4.0,
+                "comment": "Sleek design, adds a modern touch to my desk."
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "name": "Document Organizer",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 14.99,
+        "stock": 12,
+        "category": {
+            "id": 8,
+            "name": "Office Supplies"
+        },
+        "reviews": [
+            {
+                "id": 541,
+                "rating": 4.4,
+                "comment": "Helps me keep my papers in order, very handy."
+            },
+            {
+                "id": 542,
+                "rating": 4.2,
+                "comment": "Compact and efficient, great for organizing documents."
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "name": "Desk Chair",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 79.99,
+        "stock": 6,
+        "category": {
+            "id": 8,
+            "name": "Office Supplies"
+        },
+        "reviews": [
+            {
+                "id": 551,
+                "rating": 4.6,
+                "comment": "Comfortable and ergonomic, perfect for long hours."
+            },
+            {
+                "id": 552,
+                "rating": 4.4,
+                "comment": "Sturdy build, adjustable height is a plus."
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "name": "Organic Avocado",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 2.99,
+        "stock": 50,
+        "category": {
+            "id": 9,
+            "name": "Groceries"
+        },
+        "reviews": [
+            {
+                "id": 561,
+                "rating": 4.8,
+                "comment": "Creamy texture, great for guacamole!"
+            },
+            {
+                "id": 562,
+                "rating": 4.6,
+                "comment": "Fresh and delicious."
+            }
+        ]
+    },
+    {
+        "id": 57,
+        "name": "Organic Blueberries",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 4.49,
+        "stock": 30,
+        "category": {
+            "id": 9,
+            "name": "Groceries"
+        },
+        "reviews": [
+            {
+                "id": 571,
+                "rating": 4.5,
+                "comment": "Sweet and juicy!"
+            },
+            {
+                "id": 572,
+                "rating": 4.2,
+                "comment": "Perfect for smoothies."
+            }
+        ]
+    },
+    {
+        "id": 58,
+        "name": "Organic Spinach",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 3.99,
+        "stock": 20,
+        "category": {
+            "id": 9,
+            "name": "Groceries"
+        },
+        "reviews": [
+            {
+                "id": 581,
+                "rating": 4.7,
+                "comment": "Fresh and crisp!"
+            },
+            {
+                "id": 582,
+                "rating": 4.4,
+                "comment": "Great for salads."
+            }
+        ]
+    },
+    {
+        "id": 59,
+        "name": "Organic Quinoa",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 6.99,
+        "stock": 15,
+        "category": {
+            "id": 9,
+            "name": "Groceries"
+        },
+        "reviews": [
+            {
+                "id": 591,
+                "rating": 4.9,
+                "comment": "Nutritious and versatile!"
+            },
+            {
+                "id": 592,
+                "rating": 4.8,
+                "comment": "Cooked perfectly."
+            }
+        ]
+    },
+    {
+        "id": 60,
+        "name": "Organic Almond Milk",
+        "img": "https://placehold.co/600x400/EEE/31343C",
+        "price": 3.79,
+        "stock": 25,
+        "category": {
+            "id": 9,
+            "name": "Groceries"
+        },
+        "reviews": [
+            {
+                "id": 601,
+                "rating": 4.5,
+                "comment": "Creamy and delicious!"
+            },
+            {
+                "id": 602,
+                "rating": 4.3,
+                "comment": "Perfect for cereal."
+            }
+        ]
     }
 ]

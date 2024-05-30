@@ -5,7 +5,6 @@ import Sidebar from "../components/Sidebar";
 import Layout from "../layout/Layout";
 import productsData from "../dummyData/products.json";
 import {
-  faBarsStaggered,
   faBasketball,
   faBolt,
   faBook,
@@ -25,29 +24,31 @@ const Products = () => {
   const searchParams = new URLSearchParams(location.search);
   const activeCategoryName = searchParams.get("category");
 
+  const filteredData = productsData.filter(product => product.category.name === activeCategoryName)
+
   function getCategoryIcon(category) {
     category = category.replace(/\s/g, '')
     switch (category) {
       case "Electronics":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faBolt} />
+        return <FontAwesomeIcon width={28} size="2xl" color="goldenrod" className="me-2" icon={faBolt} />
       case "Clothing":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faTshirt} />
+        return <FontAwesomeIcon width={28} size="2xl" color="navy" className="me-2" icon={faTshirt} />
       case "SportsEquipment":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faBasketball} />
+        return <FontAwesomeIcon width={28} size="2xl" color="darkorange" className="me-2" icon={faBasketball} />
       case "Books":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faBook} />
+        return <FontAwesomeIcon width={28} size="2xl" color="maroon" className="me-2" icon={faBook} />
       case "Music":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faMusic} />
+        return <FontAwesomeIcon width={28} size="2xl" color="crimson" className="me-2" icon={faMusic} />
       case "Furniture":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faCouch} />
+        return <FontAwesomeIcon width={28} size="2xl" color="sienna" className="me-2" icon={faCouch} />
       case "PetProducts":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faCat} />
+        return <FontAwesomeIcon width={28} size="2xl" color="chocolate" className="me-2" icon={faCat} />
       case "Games":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faGamepad} />
+        return <FontAwesomeIcon width={28} size="2xl" color="darkslategray" className="me-2" icon={faGamepad} />
       case "OfficeSupplies":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faBriefcase} />
+        return <FontAwesomeIcon width={28} size="2xl" color="gray" className="me-2" icon={faBriefcase} />
       case "Groceries":
-        return <FontAwesomeIcon width={25} size="2xl" className="me-2" icon={faSeedling} />
+        return <FontAwesomeIcon width={28} size="2xl" color="green" className="me-2" icon={faSeedling} />
       default:
         break;
     }
@@ -68,7 +69,7 @@ const Products = () => {
           </label>
         </div>
         <div className="row">
-          {productsData.map((product) => (
+          {filteredData.map((product) => (
             <div className="col-md-6 col-sm-6 col-lg-4 col-xl-3 mb-3">
               <ProductCard data={product} />
             </div>
