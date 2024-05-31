@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -16,7 +16,9 @@ const StarRating = () => {
             onClick={() => setRating(index)}
             onMouseEnter={() => setHover(index)}
             onMouseLeave={() => setHover(rating)}>
-            <span style={{ fontSize: 12 }}><FontAwesomeIcon style={{color: "#899707"}} icon={faStar} /></span>
+            <span style={{ fontSize: 12 }}>
+              <FontAwesomeIcon style={{ color: "#899707" }} icon={faStar} />
+            </span>
           </button>
         );
       })}
