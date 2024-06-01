@@ -13,7 +13,8 @@ const Reviews = () => {
                             <div className="card-body row">
                                 <div className="col-auto mr-auto">
                                     <img className="rounded-circle img-fluid" style={{ width: 55, height: 55 }}
-                                        src="https://images.unsplash.com/photo-1614595797408-3d57687a1c5d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                        src="https://images.unsplash.com/photo-1614595797408-3d57687a1c5d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    />
                                 </div>
                                 <div className="card-title col-auto h5 mr-auto mt-3">John Doe</div>
                                 <div className="col-auto mr-auto mt-3"><StarRating /></div>

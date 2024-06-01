@@ -7,9 +7,7 @@ const OrderTable = () => {
             <div>
                 <h1 className="fs-5">Order history</h1>
             </div>
-
             <hr />
-
             <div className="table w-100 mt-3 mb-3">
                 <table className="table">
                     <tr>
@@ -23,7 +21,7 @@ const OrderTable = () => {
                             <tr key={key}>
                                 <td>{val.name}</td>
                                 <td>{val.price}</td>
-                                <td><img src={val.img} style={{width:100, height:100}}></img></td>
+                                <td><img src={val.img} style={{ width: 100, height: 100 }}></img></td>
                                 <td><button className="btn btn-primary">Add review</button></td>
                             </tr>
                         )

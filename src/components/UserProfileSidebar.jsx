@@ -11,9 +11,10 @@ const UserProfileSidebar = () => {
             <div className="row flex-nowrap">
                 <div className="px-sm-2 p-3 bg-secondary rounded w-100">
                     <div className="d-flex flex-column align-items-sm-start px-3 pt-2 text-white">
-                        <p className="h4 fw-bold my-4">
-                            <FontAwesomeIcon width={35} className="me-2" icon={faCrow} />
-                            Welcome, John Doe</p>
+                        <p className="fs-4 fw-bold mt-4 mb-3">
+                            <FontAwesomeIcon width={32} className="me-1" icon={faCrow} />
+                            Welcome, John!
+                        </p>
                         <ul
                             className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-sm-start gap-2 fs-6 fw-bold"
                             id="menu"
