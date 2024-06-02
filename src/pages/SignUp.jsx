@@ -11,23 +11,27 @@ const SignUp = () => {
               <div className="col-sm">
                 <h3 className="mt-3 text-center fw-bold">Sign Up</h3>
                 <div class="form-floating mb-2 mt-4">
-                  <input type="text" class="form-control" id="registerInputName" placeholder="Enter Your Name Here" />
+                  <input type="text" class="form-control" id="signUpInputName" placeholder="Enter Your Name Here" />
                   <label htmlFor="signUpInputName">Name</label>
                 </div>
                 <div class="form-floating my-2">
-                  <input type="email" class="form-control" id="registerInputEmail" placeholder="Enter Your Email Here" />
+                  <input type="text" class="form-control" id="signUpInputSurname" placeholder="Enter Your Surname Here" />
+                  <label htmlFor="signUpInputSurname">Surname</label>
+                </div>
+                <div class="form-floating my-2">
+                  <input type="email" class="form-control" id="signUpInputEmail" placeholder="Enter Your Email Here" />
                   <label htmlFor="signUpInputEmail">Email</label>
                 </div>
                 <div class="form-floating my-2">
-                  <input type="tel" class="form-control" id="registerInputPhone" placeholder="Enter Your Phone Number Here" />
+                  <input type="tel" class="form-control" id="signUpInputPhone" placeholder="Enter Your Phone Number Here" />
                   <label htmlFor="signUpInputPhone">Phone Number</label>
                 </div>
                 <div class="form-floating my-2">
-                  <input type="password" class="form-control" id="registerInputPassword" placeholder="Enter Your Password Here" />
+                  <input type="password" class="form-control" id="signUpInputPassword" placeholder="Enter Your Password Here" />
                   <label htmlFor="signUpInputPassword">Password</label>
                 </div>
                 <div class="form-floating mt-2 mb-4">
-                  <input type="password" class="form-control" id="registerInputPassword" placeholder="Enter Your Password Here" />
+                  <input type="password" class="form-control" id="signUpInputPassword" placeholder="Enter Your Password Here" />
                   <label htmlFor="signUpInputPassword">Enter Your Password Again</label>
                 </div>
                 <button className="btn btn-primary col-12 fw-bold" type="submit">

@@ -11,7 +11,7 @@ const SignIn = () => {
               <div className="col-sm">
                 <h3 className="mt-4 text-center fw-bold">Sign In</h3>
                 <div class="form-floating mb-2 mt-4">
-                  <input type="text" class="form-control" id="registerInputName" placeholder="Enter Your Name Here" />
+                  <input type="text" class="form-control" id="signInInputName" placeholder="Enter Your Name Here" />
                   <label htmlFor="signInInputName">Name</label>
                 </div>
                 <div class="form-floating mt-2 mb-4">
