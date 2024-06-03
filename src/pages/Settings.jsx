@@ -1,8 +1,6 @@
 import React from "react";
 import UserProfileLayout from "../layout/UserProfileLayout";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faKey } from "@fortawesome/free-solid-svg-icons";
-import { faImage } from "@fortawesome/free-solid-svg-icons";
+import { faKey, faImage, faUser, faUpload, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Settings = () => {
@@ -13,11 +11,13 @@ const Settings = () => {
         style={{ maxWidth: "1024px" }}
       >
         <div className="border rounded p-3 m-auto">
-          <h1 className="fs-5 fw-bold">Edit your profile</h1>
+          <h4 className="fw-bold">
+            <FontAwesomeIcon icon={faPenToSquare} className="me-2" color="blue"/>
+            Edit your profile</h4>
           <hr />
           <div className="form-body my-4">
             <p className="h5 fw-bold mb-4">
-              <FontAwesomeIcon icon={faUser} className="me-2" />
+              <FontAwesomeIcon icon={faUser} className="me-2" color="darkslategray" />
               Change your profile details
             </p>
             <div className="row gx-2">
@@ -41,7 +41,7 @@ const Settings = () => {
               </div>
             </div>
             <p className="h5 fw-bold my-4">
-              <FontAwesomeIcon icon={faKey} className="me-2" />
+              <FontAwesomeIcon icon={faKey} className="me-2" color="darkgoldenrod" />
               Change your password
             </p>
             <div className="row gx-2 mt-2">
@@ -55,16 +55,17 @@ const Settings = () => {
               </div>
             </div>
             <p className="h5 my-4 fw-bold">
-              <FontAwesomeIcon icon={faImage} className="me-2" />
+              <FontAwesomeIcon icon={faImage} className="me-2" color="green" />
               Change your profile picture
             </p>
-            <div className="mt-4 row justify-content-center">
-              <div className="btn btn-lg col-12 col-md-8 col-lg-5 col-xl-4 btn-outline-success">
+            <div className="mt-4 mx-2 mx-lg-0 row justify-content-center">
+              <div className="btn btn-lg col-12 btn-outline-success" style={{ maxWidth: "400px" }}>
                 <label
                   role="button"
                   className="form-label m-1 fw-bold"
                   for="userProfilePicture"
                 >
+                  <FontAwesomeIcon icon={faUpload} width={35} height={35} style={{ marginBottom: "2px" }} />
                   Select File to Upload
                 </label>
                 <input

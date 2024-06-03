@@ -8,6 +8,12 @@ body {
   background-color: #fefefe !important;
 }
 
+.content-wrapper {
+  max-width: 1440px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -1,11 +1,16 @@
 import React from "react";
 import products from "../dummyData/products.json"
+import { faList } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const OrderTable = () => {
     return (
         <div className="container p-3 border rounded">
             <div>
-                <h1 className="fs-5">Order history</h1>
+                <h4 className="fw-bold">
+                    <FontAwesomeIcon icon={faList} className="me-2" color="blue" />
+                    Order history
+                </h4>
             </div>
             <hr />
             <div className="table w-100 mt-3 mb-3">

@@ -9,17 +9,19 @@ function App() {
     <div>
       <CartProvider>
         <Header />
-        <BrowserRouter>
-          <Routes>
-            {routes.map((route) => (
-              <Route
-                key={crypto.randomUUID()}
-                path={route.path}
-                element={route.component}
-              />
-            ))}
-          </Routes>
-        </BrowserRouter>
+        <div className="content-wrapper">
+          <BrowserRouter>
+            <Routes>
+              {routes.map((route) => (
+                <Route
+                  key={crypto.randomUUID()}
+                  path={route.path}
+                  element={route.component}
+                />
+              ))}
+            </Routes>
+          </BrowserRouter>
+        </div>
         <Footer />
       </CartProvider>
     </div>
