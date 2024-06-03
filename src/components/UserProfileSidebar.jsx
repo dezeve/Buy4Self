@@ -9,7 +9,7 @@ const UserProfileSidebar = () => {
     return (
         <div className="container-fluid">
             <div className="row flex-nowrap">
-                <div className="px-sm-2 p-3 bg-secondary rounded w-100">
+                <div className="px-2 p-3 bg-secondary rounded w-100">
                     <div className="d-flex flex-column align-items-sm-start px-3 pt-2 text-white">
                         <p className="fs-4 fw-bold mt-4 mb-3">
                             <FontAwesomeIcon width={32} className="me-1" icon={faCrow} />

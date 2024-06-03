@@ -1,33 +1,34 @@
 import React from "react";
 import products from "../dummyData/products.json"
-import { faList } from "@fortawesome/free-solid-svg-icons";
+import { faList, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const OrderTable = () => {
     return (
-        <div className="container p-3 border rounded">
+        <div className="p-3 px-1">
             <div>
-                <h4 className="fw-bold">
+                <h4 className="fw-bold mb-4">
                     <FontAwesomeIcon icon={faList} className="me-2" color="blue" />
                     Order history
                 </h4>
             </div>
-            <hr />
+            <hr style={{marginBottom: "-10px"}} />
             <div className="table w-100 mt-3 mb-3">
-                <table className="table">
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Image</th>
-                        <th>&nbsp;</th>
-                    </tr>
+                <table className="table w-100 order-table">
                     {products.map((val, key) => {
                         return (
                             <tr key={key}>
-                                <td>{val.name}</td>
-                                <td>{val.price}</td>
-                                <td><img src={val.img} style={{ width: 100, height: 100 }}></img></td>
-                                <td><button className="btn btn-primary">Add review</button></td>
+                                <td>
+                                    <img src={val.img}
+                                        style={{ width: 125, height: 90, borderRadius: "15px" }} />
+                                </td>
+                                <td className="fs-6">{val.name}</td>
+                                <td style={{ color: "red" }} className="fw-bold">{val.price} $</td>
+                                <td className="fs-5">
+                                    <button className="btn btn-primary px-3">
+                                        <FontAwesomeIcon icon={faMessage} className="me-2" />Add review
+                                    </button>
+                                </td>
                             </tr>
                         )
                     })}

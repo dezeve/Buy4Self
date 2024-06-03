@@ -46,3 +46,22 @@ button {
   text-align: center !important;
   transform: translate(-50%, 0) !important;
 }
+
+.order-table {
+  border-collapse: separate !important;
+  border-spacing: 0 1em !important;
+}
+
+.order-table td {
+  border-width: 1px 0;
+  border-color: gainsboro;
+  border-style: solid;
+}
+.order-table td:first-child {
+  border-left-width: 1px;
+  border-radius: 5px 0 0 5px;
+}
+.order-table td:last-child {
+  border-right-width: 1px;
+  border-radius: 0 5px 5px 0;
+}
