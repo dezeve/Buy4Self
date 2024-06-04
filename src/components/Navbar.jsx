@@ -3,8 +3,9 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import CartDropdown from "./CartDropdown";
+import logoWithText from "../assets/images/buy_4_self_logo_with_text.png"
 
 const Navbar = (props) => {
 
@@ -23,8 +24,8 @@ const Navbar = (props) => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary text-light fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand fw-bold" href="/">
-            Buy4Self
+          <a className="navbar-brand fw-bold my-0 py-0" href="/">
+            <img src={logoWithText} alt="Buy4Self Logo" height={40} />
           </a>
           <div className="d-block d-lg-none">
             <CartDropdown />

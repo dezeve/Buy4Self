@@ -1,4 +1,5 @@
 import React from "react";
+import logoWithText from "../assets/images/buy_4_self_logo_with_text.png"
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         href="/"
         className="col-md-4 d-flex align-items-center justify-content-center link-light text-decoration-none fs-4"
       >
-        Buy4Self
+        <img src={logoWithText} alt="Buy4Self Logo" height={36} />
       </a>
 
       <ul className="nav col-md-4 justify-content-end">
@@ -18,7 +19,7 @@ const Footer = () => {
             Home
           </a>
         </li>
-        
+
         <li className="nav-item">
           <a href="/offers" className="nav-link px-2 text-white">
             Offers
