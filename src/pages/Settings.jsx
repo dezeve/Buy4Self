@@ -10,11 +10,11 @@ const Settings = () => {
         className="form mx-auto"
         style={{ maxWidth: "1024px" }}
       >
-        <div className="border rounded p-3 m-auto">
-          <h4 className="fw-bold">
-            <FontAwesomeIcon icon={faPenToSquare} className="me-2" color="blue"/>
-            Edit your profile</h4>
-          <hr />
+        <h4 className="fw-bold mt-3">
+          <FontAwesomeIcon icon={faPenToSquare} className="me-2" color="blue" />
+          Edit your profile</h4>
+        <hr />
+        <div className="border rounded pt-0 pb-3 px-3 m-auto">
           <div className="form-body my-4">
             <p className="h5 fw-bold mb-4">
               <FontAwesomeIcon icon={faUser} className="me-2" color="darkslategray" />

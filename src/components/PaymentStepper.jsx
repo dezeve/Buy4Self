@@ -51,7 +51,7 @@ function PaymentStepper() {
   }
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box className="border rounded py-4 px-2" sx={{ width: '100%' }}>
       <Stepper activeStep={activeStep}>
         {steps.map((label) => {
           const stepProps = {};

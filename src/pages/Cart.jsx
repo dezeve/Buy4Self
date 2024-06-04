@@ -67,7 +67,7 @@ const Cart = () => {
             </tbody>
           </table>
           <hr />
-          <div className="text-end strong fw-bold" style={{fontFamily:"Times New Roman"}}>
+          <div className="text-end strong fw-bold">
             <label className="text-end"> Total: 213 TL</label>
             <br />
             <label className="text-end"> Discount: -10 TL</label> <br />

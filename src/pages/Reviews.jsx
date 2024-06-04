@@ -2,11 +2,18 @@ import React from "react";
 import UserProfileLayout from "../layout/UserProfileLayout";
 import products from "../dummyData/products.json";
 import StarRating from "../components/StarRating";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Reviews = () => {
     return (
         <UserProfileLayout>
             <div>
+                <h4 className="fw-bold mt-3">
+                    <FontAwesomeIcon icon={faComment} className="me-2" color="blue" />
+                    Your Reviews
+                </h4>
+                <hr className="mb-4" />
                 {products.map((item, index) => (
                     <div key={index}>
                         <div className="card">

@@ -34,9 +34,11 @@ const SignUp = () => {
                   <input type="password" class="form-control" id="signUpInputPassword" placeholder="Enter Your Password Here" />
                   <label htmlFor="signUpInputPassword">Enter Your Password Again</label>
                 </div>
-                <button className="btn btn-primary col-12 fw-bold" type="submit">
-                  Sign Up
-                </button>
+                <a href="/sign-in">
+                  <button className="btn btn-primary col-12 fw-bold" type="submit">
+                    Sign Up
+                  </button>
+                </a>
                 <div className="text-center mt-3">
                   Are you already registered? <br />
                   <a
