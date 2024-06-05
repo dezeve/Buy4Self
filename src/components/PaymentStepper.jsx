@@ -23,15 +23,27 @@ function PaymentStepper() {
     switch (stepNumber) {
       case 1:
         return (
-          <div className="my-5">
-            <label>First name</label>
-            <input type="text" placeholder="Enter your first name here" className="form-control mb-3" />
-            <label>Last name</label>
-            <input type="text" placeholder="Enter your last name here" className="form-control mb-3" />
-            <label>Email adress</label>
-            <input type="email" placeholder="Enter your email adress here" className="form-control mb-3" />
-            <label>Phone number</label>
-            <input type="tel" placeholder="Enter your phone number here" className="form-control" />
+          <div className="mt-5 mb-4">
+            <div className="row gx-2">
+              <div class="form-floating mb-2 mt-2 col-6">
+                <input type="text" class="form-control" id="stepperFirstName" placeholder="First Name" />
+                <label htmlFor="stepperFirstName">First Name</label>
+              </div>
+              <div class="form-floating my-0 my-2 col-6">
+              <input type="text" class="form-control" id="stepperLastName" placeholder="Last Name" />
+                <label htmlFor="stepperLastName">Last Name</label>
+              </div>
+            </div>
+            <div className="row gx-2">
+              <div class="form-floating mb-2 mt-2 col-6">
+                <input type="email" class="form-control" id="stepperEmail" placeholder="Email Address" />
+                <label htmlFor="stepperEmail">Email Address</label>
+              </div>
+              <div class="form-floating my-0 my-2 col-6">
+              <input type="tel" class="form-control" id="stepperPhone" placeholder="Phone Number" />
+                <label htmlFor="stepperPhone">Phone Number</label>
+              </div>
+            </div>
           </div>
         )
       case 2:
@@ -51,14 +63,14 @@ function PaymentStepper() {
   }
 
   return (
-    <Box className="py-4 px-2" sx={{ width: '100%' }}>
+    <Box className="py-4 px-2 mx-auto" sx={{ width: '100%', maxWidth: "768px" }}>
       <Stepper activeStep={activeStep}>
         {steps.map((label) => {
           const stepProps = {};
           const labelProps = {};
           return (
             <Step key={label} {...stepProps}>
-              <StepLabel {...labelProps}>{label}</StepLabel>
+              <StepLabel {...labelProps}><b>{label}</b></StepLabel>
             </Step>
           );
         })}

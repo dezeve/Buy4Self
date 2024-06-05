@@ -43,14 +43,14 @@ const PaymentCard = () => {
                 </div>
             </div>
             <div className='d-grid'>
+                <button type="submit" className="btn btn-success fw-bold mb-2">
+                    Make payment
+                </button>
                 <button className="btn btn-outline-dark fw-bold">
                     <a href="/Cart">
                         <FontAwesomeIcon icon={faCartShopping} className="me-2" />
                         Go to your cart
                     </a>
-                </button>
-                <button type="submit" className="btn btn-primary fw-bold mt-3">
-                    Make payment
                 </button>
             </div>
         </div>
