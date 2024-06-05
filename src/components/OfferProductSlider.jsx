@@ -10,7 +10,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"; */
 const OfferProductSlider = (props) => {
   const { data: products } = props;
   var settings = {
-    dots: true,
+    dots: false,
     speed: 1200,
     slidesToShow: 5,
     autoplay: true,

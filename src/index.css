@@ -65,3 +65,9 @@ button {
   border-right-width: 1px;
   border-radius: 0 5px 5px 0;
 }
+
+.product-horizontal-rule {
+  margin-top: 7px;
+  width: 97% !important;
+  margin: auto !important;
+}

@@ -1,4 +1,5 @@
 import {
+  faComments,
   faMinus,
   faPlus,
   faShoppingCart,
@@ -10,7 +11,7 @@ import Layout from "../layout/Layout";
 import StarRating from "../components/StarRating";
 
 const Product = () => {
-  const [ quantity, setQuantity ] = useState(1);
+  const [quantity, setQuantity] = useState(1);
   const { toggleCart } = useCart();
 
   const addToCartHandler = (productId) => {
@@ -93,7 +94,12 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="col-12 mt-5">
+      <h3 className="fw-bold mt-5 mt-sm-4 mb-3">
+        <FontAwesomeIcon icon={faComments} className="mx-2" color="steelblue" />
+        Reviews
+      </h3>
+      <hr className="mb-0 pb-0 product-horizontal-rule" />
+      <div className="col-12 mt-4">
         <div className="card p-1" style={{ border: "none" }}>
           <div className="card">
             <div className="card-body row">
