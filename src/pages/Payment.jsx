@@ -3,14 +3,14 @@ import Layout from "../layout/Layout";
 import PaymentStepper from "../components/PaymentStepper";
 import PaymentCard from "../components/PaymentCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCreditCard } from "@fortawesome/free-solid-svg-icons";
+import { faCashRegister } from "@fortawesome/free-solid-svg-icons";
 
 const Payment = () => {
     return (
         <Layout>
             <div>
                 <h2 className="mt-3 fw-bold">
-                    <FontAwesomeIcon icon={faCreditCard} className="me-2" color="green"/>
+                    <FontAwesomeIcon icon={faCashRegister} className="me-2" color="green"/>
                     Payment</h2>
                 <hr className="my-3" />
                 <div className="row gx-3 mb-5 justify-content-center">

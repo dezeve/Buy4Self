@@ -1,47 +1,55 @@
 import React from "react";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping, faClipboardList, faCreditCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PaymentCard = () => {
     return (
-        <div className="border rounded py-4 px-2">
-            <h3>Card information</h3>
-            <hr className="my-3"/>
+        <div className="p-2 mx-auto" style={{maxWidth: "500px"}}>
+            <h4 className="fw-bold">
+                <FontAwesomeIcon icon={faCreditCard} className="mx-2" color="green" />
+                Card information
+            </h4>
+            <hr className="my-3" />
             <form className="my-4">
-                <label>Card number</label>
-                <input type="text" placeholder="Enter your card number here" className="form-control mb-3" />
-                <div className="row mb-3">
-                    <div className="col-12 col-md-6">
-                        <label className="form-label">MM / YY</label>
-                        <input type="text" placeholder="MM / YY" className="form-control" />
+                <div class="form-floating mb-2 mt-4 mt-sm-2">
+                    <input type="text" class="form-control" id="creditCardInputName" placeholder="Cart Number" />
+                    <label htmlFor="creditCardInputName">Cart Number</label>
+                </div>
+                <div className="row gx-2">
+                    <div class="form-floating mb-2 mt-2 col-6">
+                        <input type="email" class="form-control" id="creditCardInputMmYy" placeholder="MM / YY" />
+                        <label htmlFor="creditCardInputMmYy">MM / YY</label>
                     </div>
-                    <div className="col-12 col-md-6">
-                        <label for="exampleInputEmail1" className="form-label">CVV code</label>
-                        <input type="password" placeholder="CVV code" className="form-control" />
+                    <div class="form-floating my-0 my-2 col-6">
+                        <input type="tel" class="form-control" id="creditCardInputCvv" placeholder="CVV" />
+                        <label htmlFor="creditCardInputCvv">CVV</label>
                     </div>
                 </div>
-                <label>Name</label>
-                <input type="text" placeholder="Name on the card" className="form-control" />
+                <div class="form-floating mb-2 mt-4 mt-sm-2">
+                    <input type="text" class="form-control" id="creditCardInputName" placeholder="Name" />
+                    <label htmlFor="creditCardInputName">Name</label>
+                </div>
             </form>
-            <hr />
-            <div className="row">
+            <h4 className="fw-bold">
+                <FontAwesomeIcon icon={faClipboardList} className="mx-2" color="green" />
+                Summary
+            </h4>
+            <hr className="my-3" />
+            <div className="row mb-4">
                 <div className="strong fw-bold col-12 col-md-6">
-                    <label> Total: 213 TL</label>
-                    <br />
-                    <label> Discount: -10 TL</label> <br />
-                    <label> Total: 203 TL</label>
-                </div>
-                <div className="col-12 col-md-6 justify-content-center d-flex">
-                    <button className="btn btn-secondary">
-                        <a href="/Cart">
-                            <FontAwesomeIcon icon={faCartShopping} /><br />Go to your cart
-                        </a>
-                    </button>
+                    <p className="my-1">Total: <span className="text-danger">213 $</span></p>
+                    <p className="my-1">Discount: <span className="text-danger">10 $</span></p>
+                    <p className="my-1">Total: <span className="text-danger">203 $</span></p>
                 </div>
             </div>
-            <hr />
             <div className='d-grid'>
-                <button type="submit" className="btn btn-primary mb-2 mt-3">
+                <button className="btn btn-outline-dark fw-bold">
+                    <a href="/Cart">
+                        <FontAwesomeIcon icon={faCartShopping} className="me-2" />
+                        Go to your cart
+                    </a>
+                </button>
+                <button type="submit" className="btn btn-primary fw-bold mt-3">
                     Make payment
                 </button>
             </div>
