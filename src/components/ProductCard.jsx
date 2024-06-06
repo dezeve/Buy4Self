@@ -65,11 +65,14 @@ const ProductCard = (props) => {
           </span>
         </a>
         {generateRandomBadges()}
-        <div className="productPrice text-center text-third fs-5 fw-bold">
-          {product.price} $
-        </div>
       </div>
       <div className="position-relative px-3" style={{ bottom: "20px" }}>
+        <div
+          className="productPrice text-center text-third fs-5 fw-bold"
+          style={{marginBottom: "10px"}}
+        >
+          {product.price} $
+        </div>
         <div
           className="btn btn-success col-12 fw-bold"
           onClick={() => addToCartHandler(product.id)}
