@@ -1,4 +1,4 @@
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faShoppingCart, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Layout from "../layout/Layout";
 import QuantitySelector from "../components/QuantitySelector";
@@ -7,7 +7,11 @@ const Cart = () => {
   return (
     <Layout>
       <div className="p-5 rounded">
-        <h1>Cart</h1>
+        <h2 className="fw-bold">
+          <FontAwesomeIcon icon={faShoppingCart} className="mx-2" width={30} color="steelblue" />
+          Cart
+        </h2>
+        <hr className="mb-4" />
         <div className="table-responsive">
           <table className="table">
             <thead>
@@ -47,20 +51,20 @@ const Cart = () => {
                       </h5>
 
                       <span className="badge rounded-pill text-bg-light mb-2">
-                        Elektronik
+                        Electronic
                       </span>
                     </div>
                   </div>
                 </th>
                 <td className="border-0 align-middle">
-                  <strong>79.00 TL</strong>
+                  <strong className="text-danger">79.00 $</strong>
                 </td>
                 <td className="border-0 align-middle">
                   <QuantitySelector />
                 </td>
                 <td className="border-0 align-middle">
                   <a href="#" className="text-dark">
-                    <FontAwesomeIcon icon={faTrash} className="ml-2" />
+                    <FontAwesomeIcon icon={faTrash} className="ms-4" size="lg" />
                   </a>
                 </td>
               </tr>
@@ -68,21 +72,21 @@ const Cart = () => {
           </table>
           <hr />
           <div className="text-end strong fw-bold">
-            <label className="text-end"> Total: 213 TL</label>
+            <label className="text-end"> Total: <span className="text-danger">79 $</span></label>
             <br />
-            <label className="text-end"> Discount: -10 TL</label> <br />
-            <label className="text-end"> Total: 203 TL</label>
+            <label className="text-end"> Discount: <span className="text-danger">-20 $</span></label> <br />
+            <label className="text-end"> Total: <span className="text-danger">59 $</span></label>
           </div>
         </div>
 
         <div className="mt-5 justify-content-center d-flex">
-        <button type="button" className="btn btn-success">
+          <button type="button" className="btn btn btn-success fw-bold">
             <a href="/">
               Continue Shopping
             </a>
           </button>
           &nbsp;
-          <button type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-primary fw-bold p-2">
             <a href="/Payment">
               Proceed To Payment
             </a>
